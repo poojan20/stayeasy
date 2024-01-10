@@ -1,0 +1,5 @@
+ StayEasy – your one-stop solution for hassle-free hotel management and booking. Our website, built with PHP, MySQL, HTML, CSS, JS, Bootstrap, and XML, offers a seamless experience for users and hotel administrators alike.
+
+With a simple interface, responsive design, and dynamic booking system, StayEasy makes hotel reservations effortless. The backend, powered by PHP and MySQL, ensures efficient management, while JavaScript adds interactivity, and XML structures data for smooth access.
+
+StayEasy is not just a booking site; it's a versatile solution focused on user convenience and operational efficiency. Whether you're a traveler seeking accommodation or a hotel managing reservations, StayEasy ensures a smooth and enjoyable experience.
