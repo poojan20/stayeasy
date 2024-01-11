@@ -5,3 +5,7 @@ With a simple interface, responsive design, and dynamic booking system, StayEasy
 StayEasy is not just a booking site; it's a versatile solution focused on user convenience and operational efficiency. Whether you're a traveler seeking accommodation or a hotel managing reservations, StayEasy ensures a smooth and enjoyable experience.
 
 hello
+Author : Pdvadhel
+        Pmtrivedi
+hello
+
