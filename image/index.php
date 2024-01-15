@@ -20,10 +20,11 @@
     .h-font{
         font-family: 'Merienda', cursive;
     }
+   
 
 </style>
 </head>
-<body style="background-color:#252729;">
+<body style="background-color:#0D1117;">
 
 
     <!--Navbar from bootstrap5-->
