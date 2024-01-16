@@ -192,22 +192,24 @@
     <!-- Swiper -->
   <div class="swiper swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </div>
-      <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </div>
+    <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/1.jpeg" alt="Description of the image" />
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/2.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/3.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/4.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/5.jpeg" alt="Description of the image" />
+    </div>
+    </div>
+    
   </div>
 </div>
 
@@ -243,3 +245,13 @@
             font-family: 'Poppins', sans-serif;
     rgb(40,44,52);
 -->
+
+
+
+
+
+
+
+
+
+
