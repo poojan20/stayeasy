@@ -192,22 +192,24 @@
     <!-- Swiper -->
   <div class="swiper swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\1.png"/>
-      </div>
-      <div class="swiper-slide">
-        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\2.png" />
-      </div>
-      <div class="swiper-slide">
-        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\3.png " >
-      </div>
-      <div class="swiper-slide">
-        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\4.png" />
-      </div>
-      <div class="swiper-slide">
-        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\5.png">
-      </div>
+    <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/1.jpeg" alt="Description of the image" />
     </div>
+
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/2.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/3.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/4.jpeg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/img/Stayeasy/stayeasy/image/carousel/5.jpeg" alt="Description of the image" />
+    </div>
+    </div>
+    
   </div>
 </div>
 
@@ -235,3 +237,13 @@
             font-family: 'Poppins', sans-serif;
     rgb(40,44,52);
 -->
+
+
+
+
+
+
+
+
+
+
