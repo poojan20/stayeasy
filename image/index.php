@@ -193,21 +193,21 @@
   <div class="swiper swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\1.png"/>
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\2.png" />
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\3.png " >
       </div>
       <div class="swiper-slide">
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\4.png" />
+      </div>
+      <div class="swiper-slide">
+        <img src="C:\xampp\htdocs\img\stayeasy\stayeasy\image\carousel\5.png">
       </div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
   </div>
 </div>
 
@@ -220,14 +220,6 @@
     var swiper = new Swiper(".swiper-container", {
       spaceBetween: 30,
       effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
     });
   </script>
 
