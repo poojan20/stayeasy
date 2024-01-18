@@ -20,6 +20,12 @@
     .h-font{
         font-family: 'Merienda', cursive;
     }
+    .h2-font{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
     .custom-bg{
         background-color:#0D1117;
     }
@@ -31,6 +37,42 @@
         z-index: 2;
         position: relative;
     }
+    .btn{
+        color: black;
+        background-color: #FFFFFF;
+        border :  1px solid black;
+    }
+    .btn:hover{
+        background-color: #111e2e;
+        color: white;
+    }
+    .btn_book{
+        color: black;
+        background-color: lightblue;
+        border :  1px solid lightblue;
+        padding : 3px 6px;
+        transition: background-color 0.3s ease;
+    }
+    .btn_book:hover{
+        background-color: #0096FF;
+        color: white;
+        
+    }
+    .btn2{
+        color: white;
+        background-color: #0D1117;
+        border :  2px solid white;
+        padding : 5px 10px
+        
+    }
+    .btn2:hover{
+        color: black;
+        background-color: white;
+        border-width : 5;
+        
+    }
+
+    
     @media screen and (max-width:575px){
         .availability-form{
         margin-top: 25px;
@@ -277,13 +319,204 @@
                         </select>
                     </div>
                         <div class="col-lg-1 mb-lg-3 mt-2">
-                            <button type = "submit" class= "btn text-white shadow-none custom-bg">Submit</button>
+                            <button type = "submit" class= "btn  shadow-none custom-bg">Submit</button>
                         </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+<!-- Rooms -->
+<h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Rooms</font></h2>
+
+<div class="container">
+    <div class="row">
+         <!-- Room1-card -->
+        <div class ="col-lg-4 col-md-6 my-3">
+           
+        <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+               
+                <div class="card-body">
+                    <h5>Simple Room Name </h5>
+                    <h6 class="mb-4">₹5000 per night</h6>
+                    <div class="features mb-4">
+                        <h6 class ="mb-1">Features</h6>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            2 Rooms 
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            2 Bathroom
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            1 Balcony 
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            3 Sofa
+                        </span>
+                    </div>
+                    <div class="facilities mb-4">
+                        <h6 class ="mb-1">Facilities</h6>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            Wifi
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                           Television
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            AC
+                        </span>
+                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            Room heater
+                        </span>
+                    </div>
+                    <div class ="rating mb-4">
+                        <h6 class ="mb-1">Rating</h6>
+                        <span class = "badge rounded-pill">
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        </span>
+                        
+                    </div>
+                    <div class ="d-flex justify-content-evenly">
+                    <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                    <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Room2-card -->
+        <div class ="col-lg-4 col-md-6 my-3">
+           
+           <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                   <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+                  
+                   <div class="card-body">
+                       <h5>Simple Room Name </h5>
+                       <h6 class="mb-4">₹5000 per night</h6>
+                       <div class="features mb-4">
+                           <h6 class ="mb-1">Features</h6>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               2 Rooms 
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               2 Bathroom
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               1 Balcony 
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               3 Sofa
+                           </span>
+                       </div>
+                       <div class="facilities mb-4">
+                           <h6 class ="mb-1">Facilities</h6>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               Wifi
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                              Television
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               AC
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               Room heater
+                           </span>
+                       </div>
+                       <div class ="rating mb-4">
+                           <h6 class ="mb-1">Rating</h6>
+                           <span class = "badge rounded-pill">
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           </span>
+                           
+                       </div>
+                       <div class ="d-flex justify-content-evenly">
+                       <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                       <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                       </div>
+                       
+                   </div>
+   
+               </div>
+   
+           </div>
+            <!-- Room3-card -->
+           <div class ="col-lg-4 col-md-6 my-3">
+           
+           <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                   <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+                  
+                   <div class="card-body">
+                       <h5>Simple Room Name </h5>
+                       <h6 class="mb-4">₹5000 per night</h6>
+                       <div class="features mb-4">
+                           <h6 class ="mb-1">Features</h6>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               2 Rooms 
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               2 Bathroom
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               1 Balcony 
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               3 Sofa
+                           </span>
+                       </div>
+                       <div class="facilities mb-4">
+                           <h6 class ="mb-1">Facilities</h6>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               Wifi
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                              Television
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               AC
+                           </span>
+                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                               Room heater
+                           </span>
+                       </div>
+                       <div class ="rating mb-4">
+                           <h6 class ="mb-1">Rating</h6>
+                           <span class = "badge rounded-pill">
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           <i class="bi bi-star-fill text-warning"></i>
+                           </span>
+                           
+                       </div>
+                       <div class ="d-flex justify-content-evenly">
+                       <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                       <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                       </div>
+                       
+                   </div>
+   
+               </div>
+   
+           </div>
+        <div class="col-lg-12 text-center mt-5">
+            <a href="#" class="btn2 btn2-sm b rounded-2  text-decoration-none">More Rooms >>></a>
+        </div>
+    </div>
+</div>
+
 <br><br><br><br><br><br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -313,14 +546,5 @@
     font-family: 'Merienda', cursive;
             font-family: 'Poppins', sans-serif;
     rgb(40,44,52);
+    fw stands for font width
 -->
-
-
-
-
-
-
-
-
-
-
