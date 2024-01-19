@@ -12,27 +12,10 @@
 <!-- Bootstrap Icons css link -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+<link rel="stylesheet" href="\img\stayeasy\stayeasy\css\common.css">
 
 <style>
-    *{
-        font-family: 'Poppins', sans-serif;
-    }
-    .h-font{
-        font-family: 'Merienda', cursive;
-    }
-    .h2-font{
-        font-family: "Raleway", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 300;
-        font-style: normal;
-    }
-    .custom-bg{
-        background-color:#0D1117;
-    }
-    .custom-bg:hover{
-        background-color:#111e2e;
-    }
+   
     .availability-form{
         margin-top: -50px;
         z-index: 2;
@@ -71,6 +54,12 @@
         background-color: white;
         border-width : 5;
         
+    }
+    .h2-font{
+        font-family: "Raleway", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
     }
 
     
@@ -517,6 +506,36 @@
         </div>
     </div>
 </div>
+
+<h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Facilitiess</font></h2>
+
+    <div class="container">
+        <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
+            <div class ="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+               <img src="\img\stayeasy\stayeasy\image\features\wifi.svg" width="80px">
+               <h5 class = "mt-3">Wifi</h5> 
+            </div>
+            <div class ="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+               <img src="\img\stayeasy\stayeasy\image\features\wifi.svg" width="80px">
+               <h5 class = "mt-3">Wifi</h5> 
+            </div>
+            <div class ="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+               <img src="\img\stayeasy\stayeasy\image\features\wifi.svg" width="80px">
+               <h5 class = "mt-3">Wifi</h5> 
+            </div>
+            <div class ="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+               <img src="\img\stayeasy\stayeasy\image\features\wifi.svg" width="80px">
+               <h5 class = "mt-3">Wifi</h5> 
+            </div>
+            <div class ="col-lg-2 col-md-2 text-center bg-white rounded shadow py-4 my-3">
+               <img src="\img\stayeasy\stayeasy\image\features\wifi.svg" width="80px">
+               <h5 class = "mt-3">Wifi</h5> 
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <a href="#" class="btn2 btn2-sm b rounded-2  text-decoration-none">More facilities >>></a>
+            </div>
+        </div>
+    </div>
 
 <br><br><br><br><br><br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
