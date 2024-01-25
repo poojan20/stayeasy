@@ -130,5 +130,4 @@
     font-family: 'Merienda', cursive;
             font-family: 'Poppins', sans-serif;
     rgb(40,44,52);
-    fw stands for font width
--->
+    fw stands for font width-->
