@@ -1,13 +1,24 @@
+:root{
+    --black:#0D1117;
+    --black_hover:#111e2e;
+}
+
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 .h-font{
-    font-family: 'Merienda', cursive;
+    font-family: 'Raleway';
 }
 
 .custom-bg{
-    background-color:#0D1117;
+    background-color: var(--black);
 }
 .custom-bg:hover{
-    background-color:#111e2e;
+    background-color:var(--black_hover);
+}
+.h-line{
+    width :150px;
+    margin : 0 auto;
+    height :1.7px;
+    background: whitesmoke;
 }
