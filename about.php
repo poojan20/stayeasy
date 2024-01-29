@@ -21,16 +21,14 @@
         <h2 class="h-font text-center"><font face ="Raleway" color ="white" >About Us</font></h2>
         <div class="h-line">
             <p class = "text-center mt-3">
-                <font color = "white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci molestiae maxime, commodi 
-                rerum non exercitationem et. <br>Odio obcaecati,voluptate repellendus provident culpa fugit adipisci
-                 porro quod sit vero quaerat? Perferendis.</font>
+                <font color = "white">Lorem ipsum dolor</font>
             </p>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-5 mb-4">
-                <h3 class="mb-3"><font color="white">cLorem ipsum dolor sit.</font></h3>
+                <h3 class="mb-3"><font color="white">clorem ipsum dolor sit.</font></h3>
                 <p>
                     <font color="white">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -61,5 +59,5 @@
     font-family: 'Merienda', cursive;
             font-family: 'Poppins', sans-serif;
     rgb(40,44,52);
-    fw stands for font width
+    fw stands for font width
 -->

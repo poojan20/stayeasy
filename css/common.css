@@ -16,9 +16,9 @@
 .custom-bg:hover{
     background-color:var(--black_hover);
 }
-.h-line{
-    width :150px;
+/* .h-line{
+    width :500px;
     margin : 0 auto;
     height :1.7px;
     background: whitesmoke;
-}
+} */

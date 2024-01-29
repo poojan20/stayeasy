@@ -13,7 +13,8 @@
                 transform: scale(1.03);
                 transition : 0.3s;
         }
-    </style>
+        
+   </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -24,15 +25,16 @@
     <?php require('inc/header.php');?>
     
     <div class="my-5 px-4">
-        <h2 class="h-font text-center"><font face ="Raleway" color ="white" >Our Facilities</font></h2>
-        <div class="h-line">
-            <p class = "text-center mt-3">
-                <font color = "white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci molestiae maxime, commodi 
-                rerum non exercitationem et. <br>Odio obcaecati,voluptate repellendus provident culpa fugit adipisci
-                 porro quod sit vero quaerat? Perferendis.</font>
-            </p>
-        </div>
+    <h2 class="text-center raleway-font text-white">Our Facilities</h2>
+    <div class="h-line">
+        <p class="text-center mt-3 text-white">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis provident iste id nesciunt temporibus quidem voluptas!
+        </p>
     </div>
+</div>
+
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-5 px-4">
