@@ -7,6 +7,11 @@
     <title>Stay easy - Facilities</title>
     
     <?php require('inc/links.php')?>
+    <style>
+        .box{
+                border-top-color: orange !important;
+        }
+    </style>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,8 +31,8 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-5 mb-4">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">  <!-- order 1 and 2 stands for the order in which they will appear in small devices-->
                 <h3 class="mb-3"><font color="white">clorem ipsum dolor sit.</font></h3>
                 <p>
                     <font color="white">
@@ -38,14 +43,87 @@
                     </font>
                 </p>
             </div>
-            <div class="col-lg-5 col-md-5 mb-4">
-                    <img src="" alt="">
+            <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-1 order-md-2">
+                    <img src="\img\stayeasy\stayeasy\image\about\img_manager.jpg" alt="" class="w-100">
             </div>
         </div>
     </div>
-    
+    <div class="container mt-5">
+        <div class="row">
+            <div class= "col-lg-3 col-md-6 mb-4 px-4">
+                <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
+                    <img src="\img\stayeasy\stayeasy\image\about\img_hotel.png" alt="" width="70px">
+                    <h4 class = "mt-4">100+ Rooms</h4>
+                </div>
+            </div>
+            <div class= "col-lg-3 col-md-6 mb-4 px-4">
+                <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
+                    <img src="\img\stayeasy\stayeasy\image\about\img_customer.png" alt="" width="70px">
+                    <h4 class = "mt-4">200+ Customers</h4>
+                </div>
+            </div>
+            <div class= "col-lg-3 col-md-6 mb-4 px-4">
+                <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
+                    <img src="\img\stayeasy\stayeasy\image\about\img_rating.png" alt="" width="70px">
+                    
+                   <h4 class = "mt-4">1000+ Reviews</h4>
+                </div>
+            </div>
+            <div class= "col-lg-3 col-md-6 mb-4 px-4">
+                <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
+                    <img src="\img\stayeasy\stayeasy\image\about\img_staff.png" alt="" width="70px">
+                    
+                   <h4 class = "mt-4">300+ Staff</h4>
+                </div>
+            </div>
+         </div>
+    </div>
+   
+    <h2 class="my-5  h-font text-center"><font color = "white">Management Team</font></h2>
+   
+   
+   <div class="container px-4">
+    <!-- from swiperjs -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper mb-5">    
+            <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+                <img src="" alt="" class = "w-100">
+            </div>
+            <div class="swiper-slide">Slide 2
+
+            </div>
+            <div class="swiper-slide">Slide 3
+
+            </div>
+            <div class="swiper-slide">Slide 4
+
+            </div>
+            <div class="swiper-slide">Slide 5
+
+            </div>
+            <div class="swiper-slide">Slide 6
+
+            </div>
+            <div class="swiper-slide">Slide 7
+
+            </div>
+            <div class="swiper-slide">Slide 8
+
+            </div>
+            <div class="swiper-slide">Slide 9
+
+            </div>
+        </div>
+  </div>
+   </div>
+   
     <?php require('inc/footer.php');?>
-</body>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+        <script> var swiper = new Swiper(".mySwiper", {});</script>
+    </body>
 </html>
 <!-- 
     !important for css overright
