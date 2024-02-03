@@ -142,7 +142,7 @@
             <form>
                 <div class="row align-items-end">
                     <div class = "col-lg-3 mb-3">
-                        <label  class="form-label" style ="font-weight: 500;">Check-in</label>
+                        <label  class="form-label" style ="font-weight: 500;">Check-ins</label>
                         <input type="date" class="form-control shadow-none">
                     </div>
                     <div class = "col-lg-3 mb-3">
