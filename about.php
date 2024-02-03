@@ -23,7 +23,7 @@
     <?php require('inc/header.php');?>
     
     <div class="my-5 px-4">
-        <h2 class="h-font text-center"><font face ="Raleway" color ="white" >About Us</font></h2>
+        <h1 class="h-font text-center"><font face ="Raleway" color ="white" >About Us</font></h1>
         <div class="h-line">
             <p class = "text-center mt-3">
                 <font color = "white">Lorem ipsum dolor</font>
@@ -87,32 +87,32 @@
     <div class="swiper mySwiper">
         <div class="swiper-wrapper mb-5">    
             <div class="swiper-slide bg-white text-center overflow-hidden rounded">
-                <img src="" alt="" class = "w-100">
+                <img src="\img\stayeasy\stayeasy\image\about\img_staff1.jpg" alt="" class = "w-100">
+                    <h5 class="mt-2">Random Name</h5>
             </div>
-            <div class="swiper-slide">Slide 2
 
+            <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+                <img src="\img\stayeasy\stayeasy\image\about\img_staff1.jpg" alt="" class = "w-100">
+                    <h5 class="mt-2">Random Name</h5>
             </div>
-            <div class="swiper-slide">Slide 3
 
+            <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+                <img src="\img\stayeasy\stayeasy\image\about\img_staff1.jpg" alt="" class = "w-100">
+                    <h5 class="mt-2">Random Name</h5>
             </div>
-            <div class="swiper-slide">Slide 4
 
+            <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+                <img src="\img\stayeasy\stayeasy\image\about\img_staff1.jpg" alt="" class = "w-100">
+                    <h5 class="mt-2">Random Name</h5>
             </div>
-            <div class="swiper-slide">Slide 5
 
+            <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+                <img src="\img\stayeasy\stayeasy\image\about\img_staff1.jpg" alt="" class = "w-100">
+                    <h5 class="mt-2">Random Name</h5>
             </div>
-            <div class="swiper-slide">Slide 6
-
-            </div>
-            <div class="swiper-slide">Slide 7
-
-            </div>
-            <div class="swiper-slide">Slide 8
-
-            </div>
-            <div class="swiper-slide">Slide 9
-
-            </div>
+            
+            
+            
         </div>
   </div>
    </div>
@@ -122,7 +122,30 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- Initialize Swiper -->
-        <script> var swiper = new Swiper(".mySwiper", {});</script>
+        <script> 
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView:4,
+        spaceBetween:40,
+        pagitaion:{
+            el:".swiper-pagitaion",
+        },
+        breakpoints: {
+                320:{
+                    slidesPerView: 1,
+                },
+                640:{
+                    slidesPerView: 1,
+                },
+                768:{
+                    slidesPerView: 3,
+                },
+                1024:{
+                    slidesPerView: 3,
+                },
+            }
+        
+        });
+        </script>
     </body>
 </html>
 <!-- 
