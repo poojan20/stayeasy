@@ -25,7 +25,7 @@
     <?php require('inc/header.php');?>
     
     <div class="my-5 px-4">
-    <h2 class="text-center raleway-font text-white">Our Facilities</h2>
+    <h1 class="text-center raleway-font text-white">Our Facilities</h1>
     <div class="h-line">
         <p class="text-center mt-3 text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis provident iste id nesciunt temporibus quidem voluptas!
