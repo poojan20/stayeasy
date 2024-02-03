@@ -15,25 +15,27 @@
 
 
 <style>
-    ::-webkit-scrollbar {
-  width: 10px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #0D1117; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
+    
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0D1117; 
+  }
    
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+     
+
     .availability-form{
         margin-top: -50px;
         z-index: 2;
