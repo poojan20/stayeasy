@@ -87,7 +87,7 @@
                         <div class="mt-3">
                             <label  class="form-label" style = "font-weight:500">Message</label>
                             
-                            <textarea rows="10" class="form-control shadow-none "style = "resize :none;"></textarea>
+                            <textarea rows="5" class="form-control shadow-none "style = "resize :none;"></textarea>
                         </div>
                         <button type = "submit" class="btn text-white custom-bg  mt-3">
                             Send
