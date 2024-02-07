@@ -1,3 +1,9 @@
 Log_index[00]
 [03-02-2024]
   -Created logs file
+
+TABLES
+     1 :Admin_cred(For credential) Table
+        - 3 col,sr no(Auto increment),admin_name(varchar,20),admin_pass(varchar,30)
+
+    
