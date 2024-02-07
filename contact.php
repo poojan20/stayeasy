@@ -39,8 +39,8 @@
     <?php require('inc/header.php');?>
     
     <div class="my-5 px-4">
-    <h1 class="text-center raleway-font text-white h-line">Contact Us</h1>
-    <div class="h-line">
+    <h1 class="text-center raleway-font text-white">Contact Us</h1>
+    <div class="h-line width-50 mt-2"></div>
         <p class="text-center mt-3 text-white">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis provident iste id nesciunt temporibus quidem voluptas!
         </p>

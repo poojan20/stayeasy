@@ -45,12 +45,12 @@
     
     <div class="my-5 px-4">
     <h1 class="text-center raleway-font text-white">Our Facilities</h1>
-    <div class="h-line">
-        <p class="text-center mt-3 text-white">
+    <div class="h-line width-50 mt-2">
+        <p class="text-center mt-2 text-white "><br>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis provident iste id nesciunt temporibus quidem voluptas!
         </p>
     </div>
-</div>
+</div><br><br>
 
 
 
