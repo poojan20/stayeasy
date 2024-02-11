@@ -23,7 +23,7 @@
 <body class="bg-dark">
     
     <div class="login-form text-center rounded shadow bg-white overflow-hidden">
-       <form>
+       <form method = "POST">
             <h4 class ="bg-dark text-white py-3"><font color = "white">Admin Login Panel</font></h4>
             <div class = "p-4">
                 <div class="mb-3"><!--required does not let you keep a field empty-->
@@ -38,6 +38,15 @@
             </button>
         </form>
     </div>
+    <?php
+        
+        if(isset($_POST['login']))
+        {
+            print_r($_POST);
+        }
+        
+    
+    ?>
 
 <?php require('inc/scripts.php'); ?>
 </body>
