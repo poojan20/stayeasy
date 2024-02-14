@@ -44,12 +44,12 @@
     
     <div class="my-5 px-4">
         <h1 class="h-font text-center"><font face ="Raleway" color ="white" >About Us</font></h1>
-        <div class="h-line">
-            <p class = "text-center mt-3">
-                <font color = "white">Lorem ipsum dolor</font>
+        <div class="h-line width-50 mt-2">
+            <p class = "text-center mt-2"><br>
+                <font color = "white">Lorem ipsum dolor</font><br>
             </p>
         </div>
-    </div>
+    </div><br>
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">  <!-- order 1 and 2 stands for the order in which they will appear in small devices-->

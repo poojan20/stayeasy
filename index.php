@@ -430,65 +430,66 @@
 
 <!-- Testimonials -->
 
-    <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Testimonials</font></h2>
+<h2 class="mt-5 pt-5 mb-4 text-center"><font face = "Raleway" color = "white" size = 50>Reviews</font></h2>
 
-    <div class="container">
-         <!-- Swiper -->
-  <div class="swiper swiper-testimonials">
-    <div class="swiper-wrapper mb-5">
-      <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-            <img src="\img\Stayeasy\stayeasy\image\features\wifi.svg" width="30px">
-            <h6 class = "m-0 ms-2">Random user 1</h6>
+<div class="container">
+    <!-- Swiper -->
+    <div class="swiper swiper-testimonials">
+        <div class="swiper-wrapper mb-5">
+            <div class="swiper-slide bg-white p-4">
+                <div class="profile d-flex align-items-center mb-3">
+                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                    <h6 class="m-0 ms-2">Random user 1</h6>
+                </div>
+                <p>Poojan pranav</p>
+                <div class="rating">
+                    <h6 class="mb-1">Rating</h6>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                </div>
+            </div>
+            <div class="swiper-slide bg-white p-4">
+                <div class="profile d-flex align-items-center mb-3">
+                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                    <h6 class="m-0 ms-2">Random user 2</h6>
+                </div>
+                <p>Poojan pranav</p>
+                <div class="rating">
+                    <h6 class="mb-1">Rating</h6>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                </div>
+            </div>
+            <div class="swiper-slide bg-white p-4">
+                <div class="profile d-flex align-items-center mb-3">
+                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                    <h6 class="m-0 ms-2">Random user 3</h6>
+                </div>
+                <p>Poojan pranav</p>
+                <div class="rating">
+                    <h6 class="mb-1">Rating</h6>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                </div>
+            </div>
         </div>
-        <p>Poojan pranav</p>
-        <div class="rating">
-        <h6 class ="mb-1">Rating</h6>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
-    <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-            <img src="\img\Stayeasy\stayeasy\image\features\wifi.svg" width="30px">
-            <h6 class = "m-0 ms-2">Random user 2</h6>
-        </div>
-        <p>Poojan pranav</p>
-        <div class="rating">
-        <h6 class ="mb-1">Rating</h6>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-        </div>
+
+    <div class="col-lg-12 text-center mt-5">
+        <a href="#" class="btn2 btn2-sm b rounded-2 text-decoration-none">Know More >></a>
     </div>
-    <div class="swiper-slide bg-white p-4">
-        <div class="profile d-flex align-items-center mb-3">
-            <img src="\img\Stayeasy\stayeasy\image\features\wifi.svg" width="30px">
-            <h6 class = "m-0 ms-2">Random user 3</h6>
-        </div>
-        <p>Poojan pranav</p>
-        <div class="rating">
-        <h6 class ="mb-1">Rating</h6>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-        </div>
-    </div>
-    
-    <div class="swiper-pagination"></div>
 </div>
-        <div class="col-lg-12 text-center mt-5">
-            <a href="#" class="btn2 btn2-sm b rounded-2  text-decoration-none">Know More >>></a>
-        </div>
-    
-    </div>
+
 
     <!-- Reach us -->
 
@@ -550,38 +551,38 @@
             disableOnInteractoin: false,
             }
             });
-
             var swiper = new Swiper(".swiper-testimonials", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            slidesPerView: "3",
-            loop :true,
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            breakpoints: {
-                320:{
-                    slidesPerView: 1,
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "3",
+                loop: true,
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: false,
                 },
-                640:{
-                    slidesPerView: 1,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
                 },
-                768:{
-                    slidesPerView: 2,
-                },
-                1024:{
-                    slidesPerView: 3,
-                },
-            }\
+
+            // breakpoints: {
+            //     320:{
+            //         slidesPerView: 1,
+            //     },
+            //     640:{
+            //         slidesPerView: 1,
+            //     },
+            //     768:{
+            //         slidesPerView: 2,
+            //     },
+            //     1024:{
+            //         slidesPerView: 3,
+            //     },
+            // }
             });
     </script>
 

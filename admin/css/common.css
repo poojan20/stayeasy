@@ -1,0 +1,18 @@
+:root{
+    --black:#0D1117;
+    --black_hover:#111e2e;
+}
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.h-font{
+    font-family: 'Raleway';
+}
+
+.custom-bg{
+    background-color: var(--black);
+}
+.custom-bg:hover{
+    background-color:var(--black_hover);
+}

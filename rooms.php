@@ -47,8 +47,8 @@
     <?php require('inc/header.php');?>
     
     <div class="my-5 px-4">
-       <h1 class="text-center raleway-font text-white h-line">Rooms</h1>
-    
+       <h1 class="text-center raleway-font text-white">Rooms</h1>
+        <div class = "h-line"></div>
     </div>
 
 
