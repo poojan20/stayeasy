@@ -16,3 +16,8 @@
 .custom-bg:hover{
     background-color:var(--black_hover);
 }
+.custom-alert{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+}

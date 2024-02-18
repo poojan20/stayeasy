@@ -1,5 +1,6 @@
 <?php
-    require('inc/db_config.php');
+    require('inc/essentials.php');
+   require('inc/db_config.php');
 ?>
 
 <!DOCTYPE html>
@@ -17,10 +18,14 @@
             transform:translate(-50%,-50%);
             width:400px;
         }
+        
+        body{
+        background-image: url("/img/stayeasy/stayeasy/admin/login_background.jpeg");
+        }
      </style> 
     <?php require('inc/links.php'); ?>
 </head>
-<body class="bg-dark">
+<body>
     
     <div class="login-form text-center rounded shadow bg-white overflow-hidden">
        <form method = "POST">
@@ -30,7 +35,7 @@
                      <input name="admin_name" required  type="text" class="form-control shadow-none text-center" placeholder = "Admin name">
                 </div>
                 <div class="mb-3">
-                    <input name = "admin_password" required type="password" class="form-control shadow-none text-center" placeholder="Password">
+                    <input name = "admin_pass" required type="password" class="form-control shadow-none text-center" placeholder="Password">
                 </div>
             </div>
             <button name ="login" type="submit" class="btn  text-black bg-light shadow-none mb-4">
@@ -42,7 +47,30 @@
         
         if(isset($_POST['login']))
         {
-            print_r($_POST);
+            $frm_data=filteration($_POST);//we are calling the filter function in the db_config to filter data
+            //Example :
+            //Input data :<>\\'?admin
+            //Filterd data :admin
+
+            //backtick ` is used for the name of the table
+            $query = "SELECT * FROM `admin_cred` WHERE `admin_name` =? AND `admin_pass` =?";
+            $values = [$frm_data['admin_name'],$frm_data['admin_pass']];
+          
+            // $datatypes="ss";
+            $res = select($query,$values,"ss");
+            // -> for object
+            if($res->num_rows==1)//which means id and password is correct(it checks database and returns 1 if data exists)
+            {
+                $row = mysqli_fetch_assoc($res);
+                session_start();
+                $_SESSION['adminLogin'] = true;
+                $_SESSION['adminId'] = $row['sr_no'];
+                redirect('dashboard.php');
+            }
+            else
+            {
+                alert('error','Login Failed- Invalid credentials!');
+            }
         }
         
     
