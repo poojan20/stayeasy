@@ -1,6 +1,14 @@
 <?php
     require('inc/essentials.php');
-   require('inc/db_config.php');
+    require('inc/db_config.php');
+   
+    session_start();
+    session_regenerate_id(true);//for security so sessions cannot be hacked
+        if((isset( $_SESSION['adminLogin'] ) && $_SESSION['adminLogin']==true))
+        {
+            redirect('dashboard.php');
+        }
+   
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +28,9 @@
         }
         
         body{
-        background-image: url("/img/stayeasy/stayeasy/admin/login_background.jpeg");
+        background-image: url("/img/stayeasy/stayeasy/admin/login_background.jpg");
+        position: ;
+        
         }
      </style> 
     <?php require('inc/links.php'); ?>
@@ -34,11 +44,11 @@
                 <div class="mb-3"><!--required does not let you keep a field empty-->
                      <input name="admin_name" required  type="text" class="form-control shadow-none text-center" placeholder = "Admin name">
                 </div>
-                <div class="mb-3">
+                <div class="mb-2">
                     <input name = "admin_pass" required type="password" class="form-control shadow-none text-center" placeholder="Password">
                 </div>
             </div>
-            <button name ="login" type="submit" class="btn  text-black bg-light shadow-none mb-4">
+            <button name ="login" type = "submit"class="btn btn-dark shadow-none mb-4 ">
                 Login
             </button>
         </form>
@@ -62,7 +72,6 @@
             if($res->num_rows==1)//which means id and password is correct(it checks database and returns 1 if data exists)
             {
                 $row = mysqli_fetch_assoc($res);
-                session_start();
                 $_SESSION['adminLogin'] = true;
                 $_SESSION['adminId'] = $row['sr_no'];
                 redirect('dashboard.php');

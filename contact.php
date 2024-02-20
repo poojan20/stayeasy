@@ -27,6 +27,10 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }
+  .btn:hover{
+        background-color: #111e2e;
+        text-color: white;
+    }
      
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +114,7 @@
                             
                             <textarea rows="5" class="form-control shadow-none "style = "resize :none;"></textarea>
                         </div>
-                        <button type = "submit" class="btn text-white custom-bg  mt-3">
+                        <button type ="submit"class="btn btn-dark shadow-none mt-3">
                             Send
                         </button>
                    </form>
