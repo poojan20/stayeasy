@@ -11,6 +11,7 @@
             window.location.href='index.php';
             </script>"
             ;   
+            exit;
         }
     }
 
@@ -21,6 +22,7 @@
             window.location.href='$url';
             </script>"
         ;
+        exit;
     }
 
 
