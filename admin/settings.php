@@ -300,7 +300,13 @@
         xhr.onload = function() 
         {
             contacts_data = JSON.parse(this.responseText);
-            console.log(contacts_data);
+            contacts_data = Object.values(contacts_data);
+			
+			for(i=0; i<contacts_p_id.length; i++)
+			{
+					document.getElementById(contacts_p_id[i]).innerText = contacts_data[i+1];
+			}
+			iframe.src = contacts_data[9];
 
         };
 
