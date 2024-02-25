@@ -24,6 +24,14 @@
         return $data;//now $data contains filterd data(filterd by the functions)
     }
     //for Prepared statement
+
+    function selectAll($table)
+    {
+        $con = $GLOBALS['con'];
+        $res = mysqli_query($con,"SELECT * FROM $table");
+        return $res;
+    }
+
     function select($sql,$values,$datatypes)
     {
         $con = $GLOBALS['con'];//accessing global variable con which was declared outside this function.
@@ -71,5 +79,52 @@
             die("Query can't be prepared - Update");
         }
     }
-    
+
+    function insert($sql,$values,$datatypes)
+    {
+        $con = $GLOBALS['con'];//accessing global variable con which was declared outside this function.
+        if($stmt = mysqli_prepare($con,$sql))
+        {
+            mysqli_stmt_bind_param($stmt,$datatypes,...$values);// this 3 dots are called splat operator               
+            if(mysqli_stmt_execute($stmt))
+            {
+                $res = mysqli_stmt_affected_rows($stmt);
+                mysqli_stmt_close($stmt);
+                return $res;
+            }
+            else
+            {
+                mysqli_stmt_close($stmt);
+                die("Query can't be executed - Insert ");
+            }
+        }    
+        else
+        {
+            die("Query can't be prepared - Insert");
+        }
+    }
+
+    function delete($sql,$values,$datatypes)
+    {
+        $con = $GLOBALS['con'];//accessing global variable con which was declared outside this function.
+        if($stmt = mysqli_prepare($con,$sql))
+        {
+            mysqli_stmt_bind_param($stmt,$datatypes,...$values);// this 3 dots are called splat operator               
+            if(mysqli_stmt_execute($stmt))
+            {
+                $res = mysqli_stmt_affected_rows($stmt);
+                mysqli_stmt_close($stmt);
+                return $res;
+            }
+            else
+            {
+                mysqli_stmt_close($stmt);
+                die("Query can't be executed - Delete ");
+            }
+        }    
+        else
+        {
+            die("Query can't be prepared - Delete");
+        }
+    }
 ?>
