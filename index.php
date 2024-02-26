@@ -99,306 +99,305 @@
 
     <?php require('inc/header.php');?>
 
-<!--Carousel-->
+    <!--Carousel-->
 
-<div class="container-fluid mt-4"> 
-    <!-- Swiper -->
-  <div class="swiper swiper-container">
-    <div class="swiper-wrapper">
-    <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/1.jpeg" class ="w-100 d-block" />
+    <div class="container-fluid mt-4"> 
+        <!-- Swiper -->
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/1.jpeg" class ="w-100 d-block" />
+        </div>
+
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/2.jpeg" class ="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/3.jpeg" class ="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/4.png" class ="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/5.jpeg"  class ="w-100 d-block"/>
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/6.png" class ="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/7.png" class ="w-100 d-block" />
+        </div>
+        <div class="swiper-slide">
+            <img src="/img/Stayeasy/stayeasy/image/carousel/8.png" class ="w-100 d-block" />
+        </div>
+        </div>
+        
+    </div>
     </div>
 
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/2.jpeg" class ="w-100 d-block" />
-      </div>
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/3.jpeg" class ="w-100 d-block" />
-      </div>
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/4.png" class ="w-100 d-block" />
-      </div>
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/5.jpeg"  class ="w-100 d-block"/>
-    </div>
-    <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/6.png" class ="w-100 d-block" />
-      </div>
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/7.png" class ="w-100 d-block" />
-      </div>
-      <div class="swiper-slide">
-        <img src="/img/Stayeasy/stayeasy/image/carousel/8.png" class ="w-100 d-block" />
-      </div>
-    </div>
-    
-  </div>
-</div>
+    <!-- Check Availability Form -->
 
-<!-- Check Availability Form -->
-
-<div class="container availability-form">
-    <div class="row">
-        <div class="col-lg-12 bg-white shadow p-4 rounded">
-            <h5 class="mb-4">Check Booking Availability</h5>
-            <form>
-                <div class="row align-items-end">
-                    <div class = "col-lg-3 mb-3">
-                        <label  class="form-label" style ="font-weight: 500;">Check-ins</label>
-                        <input type="date" class="form-control shadow-none">
-                    </div>
-                    <div class = "col-lg-3 mb-3">
-                        <label  class="form-label" style ="font-weight: 500;">Check-out</label>
-                        <input type="date" class="form-control shadow-none">
-                    </div>
-                    <div class="col-lg-3 mb-3">
-                        <label  class="form-label" style ="font-weight: 500;">Adult</label>
-                        <select class="form-select shadow-none">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>   
-                    </div>
-                    <div class="col-lg-2 mb-3">
-                        <label  class="form-label" style ="font-weight: 500;">Children</label>
-                        <select class="form-select shadow-none">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                    </div>
-                        <div class="col-lg-1 mb-lg-3 mt-2">
-                            <button type = "submit" class= "btn  shadow-none custom-bg">Submit</button>
+    <div class="container availability-form">
+        <div class="row">
+            <div class="col-lg-12 bg-white shadow p-4 rounded">
+                <h5 class="mb-4">Check Booking Availability</h5>
+                <form>
+                    <div class="row align-items-end">
+                        <div class = "col-lg-3 mb-3">
+                            <label  class="form-label" style ="font-weight: 500;">Check-ins</label>
+                            <input type="date" class="form-control shadow-none">
                         </div>
-                </div>
-            </form>
+                        <div class = "col-lg-3 mb-3">
+                            <label  class="form-label" style ="font-weight: 500;">Check-out</label>
+                            <input type="date" class="form-control shadow-none">
+                        </div>
+                        <div class="col-lg-3 mb-3">
+                            <label  class="form-label" style ="font-weight: 500;">Adult</label>
+                            <select class="form-select shadow-none">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>   
+                        </div>
+                        <div class="col-lg-2 mb-3">
+                            <label  class="form-label" style ="font-weight: 500;">Children</label>
+                            <select class="form-select shadow-none">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                            <div class="col-lg-1 mb-lg-3 mt-2">
+                                <button type = "submit" class= "btn  shadow-none custom-bg">Submit</button>
+                            </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<!-- Rooms -->
-<h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Rooms</font></h2>
+    <!-- Rooms -->
+    <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Rooms</font></h2>
+    <div class="container">
+        <div class="row">
+            <!-- Room1-card -->
+            <div class ="col-lg-4 col-md-6 my-3">
+            
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                    <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+                
+                    <div class="card-body">
+                        <h5>Simple Room Name </h5>
+                        <h6 class="mb-4">₹5000 per night</h6>
+                        <div class="features mb-4">
+                            <h6 class ="mb-1">Features</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Rooms 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Bathroom
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                1 Balcony 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                3 Sofa
+                            </span>
+                        </div>
+                        <div class="facilities mb-4">
+                            <h6 class ="mb-1">Facilities</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Wifi
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            Television
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                AC
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Room heater
+                            </span>
+                        </div>
+                        <div class="guests mb-4">
+                            <h6 class ="mb-1">Guests</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Adults
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            2 Children
+                            </span>
+                            
+                        </div>
+                        <div class ="rating mb-4">
+                            <h6 class ="mb-1">Rating</h6>
+                            <span class = "badge rounded-pill">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            </span>
+                            
+                        </div>
+                        <div class ="d-flex justify-content-evenly">
+                        <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                        <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                        </div>
+                        
+                    </div>
 
-<div class="container">
-    <div class="row">
-         <!-- Room1-card -->
-        <div class ="col-lg-4 col-md-6 my-3">
-           
-        <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
-                <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
-               
-                <div class="card-body">
-                    <h5>Simple Room Name </h5>
-                    <h6 class="mb-4">₹5000 per night</h6>
-                    <div class="features mb-4">
-                        <h6 class ="mb-1">Features</h6>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            2 Rooms 
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            2 Bathroom
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            1 Balcony 
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            3 Sofa
-                        </span>
-                    </div>
-                    <div class="facilities mb-4">
-                        <h6 class ="mb-1">Facilities</h6>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            Wifi
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                           Television
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            AC
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            Room heater
-                        </span>
-                    </div>
-                    <div class="guests mb-4">
-                        <h6 class ="mb-1">Guests</h6>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            2 Adults
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                           2 Children
-                        </span>
-                        
-                    </div>
-                    <div class ="rating mb-4">
-                        <h6 class ="mb-1">Rating</h6>
-                        <span class = "badge rounded-pill">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        </span>
-                        
-                    </div>
-                    <div class ="d-flex justify-content-evenly">
-                    <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
-                    <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
-                    </div>
-                    
                 </div>
 
             </div>
-
-        </div>
-        <!-- Room2-card -->
-        <div class ="col-lg-4 col-md-6 my-3">
-           
-           <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
-                   <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
-                  
-                   <div class="card-body">
-                       <h5>Simple Room Name </h5>
-                       <h6 class="mb-4">₹5000 per night</h6>
-                       <div class="features mb-4">
-                           <h6 class ="mb-1">Features</h6>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               2 Rooms 
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               2 Bathroom
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               1 Balcony 
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               3 Sofa
-                           </span>
-                       </div>
-                       <div class="facilities mb-4">
-                           <h6 class ="mb-1">Facilities</h6>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               Wifi
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                              Television
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               AC
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               Room heater
-                           </span>
-                       </div>
-                       <div class="guests mb-4">
-                        <h6 class ="mb-1">Guests</h6>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            2 Adults
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                           2 Children
-                        </span>
+            <!-- Room2-card -->
+            <div class ="col-lg-4 col-md-6 my-3">
+            
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                    <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+                    
+                    <div class="card-body">
+                        <h5>Simple Room Name </h5>
+                        <h6 class="mb-4">₹5000 per night</h6>
+                        <div class="features mb-4">
+                            <h6 class ="mb-1">Features</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Rooms 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Bathroom
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                1 Balcony 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                3 Sofa
+                            </span>
+                        </div>
+                        <div class="facilities mb-4">
+                            <h6 class ="mb-1">Facilities</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Wifi
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Television
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                AC
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Room heater
+                            </span>
+                        </div>
+                        <div class="guests mb-4">
+                            <h6 class ="mb-1">Guests</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Adults
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            2 Children
+                            </span>
+                            
+                        </div>
+                        <div class ="rating mb-4">
+                            <h6 class ="mb-1">Rating</h6>
+                            <span class = "badge rounded-pill">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            </span>
+                            
+                        </div>
+                        <div class ="d-flex justify-content-evenly">
+                        <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                        <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                        </div>
                         
                     </div>
-                       <div class ="rating mb-4">
-                           <h6 class ="mb-1">Rating</h6>
-                           <span class = "badge rounded-pill">
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           </span>
-                           
-                       </div>
-                       <div class ="d-flex justify-content-evenly">
-                       <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
-                       <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
-                       </div>
-                       
-                   </div>
-   
-               </div>
-   
-           </div>
-            <!-- Room3-card -->
-           <div class ="col-lg-4 col-md-6 my-3">
-           
-           <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
-                   <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
-                  
-                   <div class="card-body">
-                       <h5>Simple Room Name </h5>
-                       <h6 class="mb-4">₹5000 per night</h6>
-                       <div class="features mb-4">
-                           <h6 class ="mb-1">Features</h6>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               2 Rooms 
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               2 Bathroom
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               1 Balcony 
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               3 Sofa
-                           </span>
-                       </div>
-                       <div class="facilities mb-4">
-                           <h6 class ="mb-1">Facilities</h6>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               Wifi
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                              Television
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               AC
-                           </span>
-                           <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                               Room heater
-                           </span>
-                       </div>
-                       <div class="guests mb-4">
-                        <h6 class ="mb-1">Guests</h6>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                            2 Adults
-                        </span>
-                        <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
-                           2 Children
-                        </span>
+    
+                </div>
+    
+            </div>
+                <!-- Room3-card -->
+            <div class ="col-lg-4 col-md-6 my-3">
+            
+            <div class="card border-0 shadow" style="max-width: 350px; margin: auto">
+                    <img src="\img\stayeasy\stayeasy\image\rooms\1.jpg" class="card-img-top" alt="image not available">
+                    
+                    <div class="card-body">
+                        <h5>Simple Room Name </h5>
+                        <h6 class="mb-4">₹5000 per night</h6>
+                        <div class="features mb-4">
+                            <h6 class ="mb-1">Features</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Rooms 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Bathroom
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                1 Balcony 
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                3 Sofa
+                            </span>
+                        </div>
+                        <div class="facilities mb-4">
+                            <h6 class ="mb-1">Facilities</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Wifi
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Television
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                AC
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                Room heater
+                            </span>
+                        </div>
+                        <div class="guests mb-4">
+                            <h6 class ="mb-1">Guests</h6>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                                2 Adults
+                            </span>
+                            <span class="badge rounded-pill text-bg-dark text-wrap lh-base">
+                            2 Children
+                            </span>
+                            
+                        </div>
+                        <div class ="rating mb-4">
+                            <h6 class ="mb-1">Rating</h6>
+                            <span class = "badge rounded-pill">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            </span>
+                            
+                        </div>
+                        <div class ="d-flex justify-content-evenly">
+                        <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
+                        <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
+                        </div>
                         
                     </div>
-                       <div class ="rating mb-4">
-                           <h6 class ="mb-1">Rating</h6>
-                           <span class = "badge rounded-pill">
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           <i class="bi bi-star-fill text-warning"></i>
-                           </span>
-                           
-                       </div>
-                       <div class ="d-flex justify-content-evenly">
-                       <a href="#" class="btn_book btn_book-sm custom-bg rounded-2 text-decoration-none">Book Now</a>
-                       <a href="#" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
-                       </div>
-                       
-                   </div>
-   
-               </div>
-   
-           </div>
-        <div class="col-lg-12 text-center mt-5">
-            <a href="#" class="btn2 btn2-sm b rounded-2  text-decoration-none">More Rooms >>></a>
+    
+                </div>
+    
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <a href="#" class="btn2 btn2-sm b rounded-2  text-decoration-none">More Rooms >>></a>
+            </div>
         </div>
     </div>
-</div>
-<!-- Facilities -->
-<h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Facilitiess</font></h2>
+    <!-- Facilities -->
+    <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Facilitiess</font></h2>
 
     <div class="container">
         <div class="row justify-content-evenly px-lg-0 px-md-0 px-5">
@@ -428,103 +427,122 @@
         </div>
     </div>
 
-<!-- Testimonials -->
-
-<h2 class="mt-5 pt-5 mb-4 text-center"><font face = "Raleway" color = "white" size = 50>Reviews</font></h2>
-
-<div class="container">
-    <!-- Swiper -->
-    <div class="swiper swiper-testimonials">
-        <div class="swiper-wrapper mb-5">
-            <div class="swiper-slide bg-white p-4">
-                <div class="profile d-flex align-items-center mb-3">
-                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                    <h6 class="m-0 ms-2">Random user 1</h6>
+    <!-- Testimonials -->
+    <h2 class="mt-5 pt-5 mb-4 text-center"><font face = "Raleway" color = "white" size = 50>Reviews</font></h2>
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper swiper-testimonials">
+            <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                        <h6 class="m-0 ms-2">Random user 1</h6>
+                    </div>
+                    <p>Poojan pranav</p>
+                    <div class="rating">
+                        <h6 class="mb-1">Rating</h6>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
                 </div>
-                <p>Poojan pranav</p>
-                <div class="rating">
-                    <h6 class="mb-1">Rating</h6>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                        <h6 class="m-0 ms-2">Random user 2</h6>
+                    </div>
+                    <p>Poojan pranav</p>
+                    <div class="rating">
+                        <h6 class="mb-1">Rating</h6>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-white p-4">
+                    <div class="profile d-flex align-items-center mb-3">
+                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
+                        <h6 class="m-0 ms-2">Random user 3</h6>
+                    </div>
+                    <p>Poojan pranav</p>
+                    <div class="rating">
+                        <h6 class="mb-1">Rating</h6>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                        <i class="bi bi-star-fill text-warning"></i>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide bg-white p-4">
-                <div class="profile d-flex align-items-center mb-3">
-                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                    <h6 class="m-0 ms-2">Random user 2</h6>
-                </div>
-                <p>Poojan pranav</p>
-                <div class="rating">
-                    <h6 class="mb-1">Rating</h6>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                </div>
-            </div>
-            <div class="swiper-slide bg-white p-4">
-                <div class="profile d-flex align-items-center mb-3">
-                    <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                    <h6 class="m-0 ms-2">Random user 3</h6>
-                </div>
-                <p>Poojan pranav</p>
-                <div class="rating">
-                    <h6 class="mb-1">Rating</h6>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                    <i class="bi bi-star-fill text-warning"></i>
-                </div>
-            </div>
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
 
-    <div class="col-lg-12 text-center mt-5">
-        <a href="#" class="btn2 btn2-sm b rounded-2 text-decoration-none">Know More >></a>
+        <div class="col-lg-12 text-center mt-5">
+            <a href="#" class="btn2 btn2-sm b rounded-2 text-decoration-none">Know More >></a>
+        </div>
     </div>
-</div>
 
 
     <!-- Reach us -->
+    
+    <?php 
+        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no` = ?";
+        $values = [1];
+        $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
+    ?>
 
-    <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Reach Us</font></h2>
-        
+    <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Reach Us</font></h2>     
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 p-4 mb-lg-0 mb-3 bg-white rounded ">
-                <iframe class="w-100 rounded " height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59286.78879159111!2d72.15490609999999!3d21.763833650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5081abb84e2f%3A0xf676d64c6e13716c!2sBhavnagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1705747537362!5m2!1sen!2sin"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="w-100 rounded " height="320px" src="<?php echo $contact_r['iframe'] ?>"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col-lg-4 col-md-4">
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Call us</h5>
-                    <a href="tel :+919586138313" class ="d-inline-block  text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i>+919586138313
+                    <a href="" class ="d-inline-block  text-decoration-none text-dark">
+                        <i class="bi bi-telephone-fill"></i>+<?php echo $contact_r['pn1'] ?>
                     </a>
                     <br>
-                    <a href="tel :+919586138313" class ="d-inline-block  text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i>+919486138313
-                    </a>
+                    <?php 
+                    if ($contact_r['pn2']!= '' )
+                        {
+                            echo <<<data
+                            <a href="tel:+$contact_r[pn2]" class ="d-inline-block  text-decoration-none text-dark">
+                                <i class="bi bi-telephone-fill"></i>+$contact_r[pn2]
+                            </a>
+                            data;
+                        }
+                    ?>
+                    
                 </div>
         
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Follow us</h5>
-                    <a href="#" class ="d-inline-block mb-3 ">
-                        <span class ="badge bg-light text-dark fs-6 p-2">
-                        <i class="bi bi-twitter-x me-1"></i>Twitter-X
-                        </span>
-                    </a><br>
-                     <a href="#" class ="d-inline-block mb-3">
+                    <?php 
+                        if($contact_r['tw']!='')
+                        {
+                            echo <<<data
+                            <a href="$contact_r[tw]" class ="d-inline-block mb-3 ">
+                                <span class ="badge bg-light text-dark fs-6 p-2">
+                                <i class="bi bi-twitter-x me-1"></i>Twitter-X
+                            </span>
+                            </a><br>
+                            data;
+                        }
+                    ?>
+                   
+                     <a href="<?php echo $contact_r['insta'] ?>" class ="d-inline-block mb-3">
                         <span class ="badge bg-light text-dark fs-6 p-2">
                             <i class="bi bi-instagram me-1"></i>Instagram
                         </span>
                     </a><br>
-                    <a href="#" class ="d-inline-block">
+                    <a href="<?php echo $contact_r['fb'] ?>" class ="d-inline-block">
                         <span class ="badge bg-light text-dark fs-6 p-2">
                             <i class="bi bi-facebook me-1"></i>Facebook
                         </span>

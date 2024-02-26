@@ -52,40 +52,54 @@
 </div>
 
 
-
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 mb-5 px-4">
                 <div class="bg-white rounded shadow p-4">
-                    <iframe class="w-100 rounded mb-4 " height="320px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59286.78879159111!2d72.15490609999999!3d21.763833650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395f5081abb84e2f%3A0xf676d64c6e13716c!2sBhavnagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1705747537362!5m2!1sen!2sin"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-100 rounded mb-4 " height="320px" src="<?php  echo $contact_r['iframe'] ?>"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <h5>Address</h5>
-                    <a href="https://maps.app.goo.gl/6F2oWi6x5MMZqsMfA" class="text-decoration-none d-inline-block text-dark mb-2" target="_blank">
-                    <i class="bi bi-geo-alt"></i>
+                    <a href="<?php  echo $contact_r['gmap'] ?>" class="text-decoration-none d-inline-block text-dark mb-2" target="_blank">
+                    <i class="bi bi-geo-alt"></i><?php  echo $contact_r['address'] ?>
                     xyz,Bhavnagar,Gujarat
                     </a>
                     <h5 class="mt-4">Call us</h5>
-                    <a href="tel :+919586138313" class ="d-inline-block  text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i>+919586138313
+                    <a href="tel :+<?php  echo $contact_r['pn1'] ?>" class ="d-inline-block  text-decoration-none text-dark">
+                        <i class="bi bi-telephone-fill"></i>+<?php  echo $contact_r['pn1'] ?>
                     </a>
                     <br>
-                    <a href="tel :+919586138313" class ="d-inline-block  text-decoration-none text-dark">
-                        <i class="bi bi-telephone-fill"></i>+919486138313
-                    </a>
+                    <?php
+                        if($contact_r['pn2']!='')
+                        {
+                            echo <<<data
+                            <a href="tel :+$contact_r[pn2]" class ="d-inline-block  text-decoration-none text-dark">
+                                <i class="bi bi-telephone-fill"></i>+$contact_r[pn2]
+                            </a>
+                            data;
+                        }
+                    ?>
+                   
                     <h5 class="mt-4 ">Email</h5>
-                    <a href="mailto:pdvadhel8@gmail.com" class = "text-decoration-none d-inline-block text-dark mb-2" target="_blank">
-                    <i class="bi bi-envelope-paper-fill"></i> pdvadhel8@gmail.com
+                    <a href="<?php  echo $contact_r['email'] ?>" class = "text-decoration-none d-inline-block text-dark mb-2" target="_blank">
+                    <i class="bi bi-envelope-paper-fill"></i> <?php  echo $contact_r['email'] ?>
                     </a><br>
                     <a href="mailto:trivedipoojan92@gmail.com" class = "text-decoration-none d-inline-block text-dark mb-2" target="_blank">
                     <i class="bi bi-envelope-paper-fill"></i> trivedipoojan92@gmail.com
                     </a>
                     <h5 class = "mt-4">Follow us</h5>
-                    <a href="#" class ="d-inline-block mb-3 text-decoration-none text-dark fs-5 me-2">
-                        <i class="bi bi-twitter-x me-1"></i>
-                    </a>
-                     <a href="#" class ="d-inline-block mb-3 text-decoration-none text-dark fs-5 me-2">
+                    <?php
+                        if($contact_r['tw']!='')
+                        {
+                            echo <<<data
+                            <a href="$contact_r[tw]" class ="d-inline-block mb-3 text-decoration-none text-dark fs-5 me-2">
+                                <i class="bi bi-twitter-x me-1"></i>
+                            </a>
+                            data;
+                        }
+                    ?>       
+                     <a href="<?php  echo $contact_r['insta'] ?>" class ="d-inline-block mb-3 text-decoration-none text-dark fs-5 me-2">
                            <i class="bi bi-instagram me-1"></i>
                      </a>
-                    <a href="#" class ="d-inline-block text-decoration-none text-dark fs-5">
+                    <a href="<?php  echo $contact_r['fb'] ?>" class ="d-inline-block text-decoration-none text-dark fs-5">
                         <i class="bi bi-facebook me-1"></i>
                     </a>    
                 </div>

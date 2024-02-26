@@ -1,5 +1,18 @@
+<?php 
+    require('admin/inc/db_config.php');
+    require('admin/inc/essentials.php');
+
+    
+        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no` = ?";
+        $values = [1];
+        $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
+    
+?>
+
+
+
 <!--Navbar from bootstrap5-->
-<nav class="navbar navbar-expand-lg navbar-light px-lg-3 py-lg-2 shadow-sm sticky-top bg-body-tertiary ">
+<nav id = "nav-bar" class="navbar navbar-expand-lg navbar-light px-lg-3 py-lg-2 shadow-sm sticky-top bg-body-tertiary ">
     <div class="container-fluid">
         <a class="navbar-brand me-3" href="index.php"><font size = 5><strong>StayEasy</strong></font></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +51,7 @@
 </nav>
     <!-- Modal -->
     <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+      <div class="modal-dialog">
         <div class="modal-content">
             <form>
                     <div class="modal-header">

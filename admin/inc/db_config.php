@@ -12,11 +12,15 @@
 
     }
     function filteration($data){//this function will filter the data // $data will be an array
-        foreach($data as $key=>$value){//extracts $data's key and value in to variables
-            $data[$key] = trim($value);//removes extra spaces
-            $data[$key] = stripslashes($value);//removes backword slashes
-            $data[$key] = htmlspecialchars($value);//it will convert special character of html in to  their corresponding entities.
-            $data[$key] = strip_tags($value);//it will remove the html tags
+        foreach($data as $key => $value)
+        {//extracts $data's key and value in to variables
+            
+            $value = trim($value);//removes extra spaces
+            $value = stripslashes($value);//removes backword slashes
+            $value = strip_tags($value);//it will remove the html tags
+            $value = htmlspecialchars($value);//it will convert special character of html in to  their corresponding entities.   
+        
+            $data[$key] = $value;
         }
          //Example :
             //Input data :<>\\'?admin

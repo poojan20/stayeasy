@@ -8,6 +8,8 @@ define('ABOUT_IMG_PATH', SITE_URL . '/image/about/');
 define('UPLOAD_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT'] . '/stayeasy/stayeasy/image/');
 define('ABOUT_FOLDER', 'about/');
 
+define('CAROUSEL_FOLDER', 'carousel/');
+
 function adminLogin()
 {
     session_start();
