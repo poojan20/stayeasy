@@ -586,25 +586,26 @@
         xhr.send('get_members');
     }   
     
-    function rem_member(val) {
-    let xhr = new XMLHttpRequest();
+    function rem_member(val) 
+    {
+        let xhr = new XMLHttpRequest();
 
-    // Define the callback function to handle the response
-    xhr.onload = function() {
-        if (this.responseText == 1) {
-            alert('success', 'Member removed');
-            get_members();
-        } else {
-            alert('error', 'Server down');
-        }
-    };
+        // Define the callback function to handle the response
+        xhr.onload = function() {
+            if (this.responseText == 1) {
+                alert('success', 'Member removed');
+                get_members();
+            } else {
+                alert('error', 'Server down');
+            }
+        };
 
-    xhr.open("POST", "ajax/settings_crud.php", true);
-    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.open("POST", "ajax/settings_crud.php", true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-    // Send the request with the specified data
-    xhr.send('rem_member=' + val);
-}
+        // Send the request with the specified data
+        xhr.send('rem_member=' + val);
+    }
 
 
     // Call the get_general function when the window finishes loading
