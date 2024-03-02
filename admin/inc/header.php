@@ -32,6 +32,12 @@
                     <li class="nav-item active">
                         <a class="nav-link text-black" href="dashboard.php">Dashboard</a>
                     </li> 
+                    <li class="nav-item active">
+                        <a class="nav-link text-black" href="feature_facilities.php">Feature & Facilities</a>
+                    </li> 
+                    <li class="nav-item active">
+                        <a class="nav-link text-black" href="user_queries.php">User Queries</a>
+                    </li> 
                     <li class="nav-item active"> 
                         <a class="nav-link text-black" href="rooms.php">Rooms</a>
                     </li> 

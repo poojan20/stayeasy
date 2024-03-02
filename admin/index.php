@@ -29,7 +29,7 @@
         
         body{
         background-image: url("/img/stayeasy/stayeasy/admin/login_background.jpg");
-        position: ;
+        
         
         }
      </style> 

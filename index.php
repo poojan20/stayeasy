@@ -101,39 +101,28 @@
 
     <!--Carousel-->
 
-    <div class="container-fluid mt-4"> 
+<div class="container-fluid mt-4"> 
         <!-- Swiper -->
     <div class="swiper swiper-container">
         <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/1.jpeg" class ="w-100 d-block" />
-        </div>
-
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/2.jpeg" class ="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/3.jpeg" class ="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/4.png" class ="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/5.jpeg"  class ="w-100 d-block"/>
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/6.png" class ="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/7.png" class ="w-100 d-block" />
-        </div>
-        <div class="swiper-slide">
-            <img src="/img/Stayeasy/stayeasy/image/carousel/8.png" class ="w-100 d-block" />
-        </div>
-        </div>
         
+        <?php
+            $res = selectAll('carousel');
+
+            while($row = mysqli_fetch_assoc($res))
+            {
+                $path = CAROUSEL_IMG_PATH;
+                echo <<<data
+                    
+                <div class="swiper-slide">
+                    <img src="$path$row[image]" class ="w-100 d-block" />
+                </div>                 
+                data;
+            }
+        ?>
+        </div>   
     </div>
-    </div>
+ </div>
 
     <!-- Check Availability Form -->
 
@@ -491,9 +480,11 @@
     <!-- Reach us -->
     
     <?php 
-        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no` = ?";
+
+        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no`=?";
         $values = [1];
         $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
+        
     ?>
 
     <h2 class = "mt-5 pt-5 mb-4 text-center " ><font face = "Raleway" color = "white" size = 50>Reach Us</font></h2>     
@@ -505,12 +496,12 @@
             <div class="col-lg-4 col-md-4">
                 <div class="bg-white p-4 rounded mb-4">
                     <h5>Call us</h5>
-                    <a href="" class ="d-inline-block  text-decoration-none text-dark">
+                    <a href="tel: +<?php echo $contact_r['pn1'] ?>" class ="d-inline-block  text-decoration-none text-dark">
                         <i class="bi bi-telephone-fill"></i>+<?php echo $contact_r['pn1'] ?>
                     </a>
                     <br>
                     <?php 
-                    if ($contact_r['pn2']!= '' )
+                    if($contact_r['pn2']!='')
                         {
                             echo <<<data
                             <a href="tel:+$contact_r[pn2]" class ="d-inline-block  text-decoration-none text-dark">
