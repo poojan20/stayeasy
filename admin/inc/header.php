@@ -1,22 +1,11 @@
-<style>
-    a 
-    {
-        color: #000; /* Set the default text color */
-        text-decoration: none; /* Remove the underline */
-    }
 
-    a:hover
-    {
-        color: #008000; /* Green color */
-        font-weight: bold; /* Example styling */
-    }
-
-</style>
-
+<!-- <button type = "submit"class="btn btn-dark shadow-none">
+                        LOGIN
+                    </button> -->
 
 <div class="container-fluid bg-light text-dark p-3 d-flex align-items-center justify-content-between sticky-top">
     <h3 class= "mb-0 h-font"><b>StayEasy</b></h3>
-    <a href="logout.php" class="btn btn-light btn-sm">Log Out</a>
+    <a href="logout.php" class="btn btn-dark btn-sm shadow-none">Log out</a>
 </div>
 <div class="col-lg-2  bg-light border-top border-3 border-color-secondary" id="dashboard-menu">
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark">

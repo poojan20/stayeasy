@@ -55,29 +55,28 @@
 <div class="container-fluid" id="main-content">
     <div class="row">
         <div class="col-lg-10 ms-auto p-4 overflow-hidden">
-            <h3 class="mb-4 text-light">Feature & Facilities</h3>
+            <h3 class="mb-4 text-light">Rooms</h3>
             
             
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h5 class="card-title m-0">
-                            Features
-                        </h5>
+                    <div class="text-end mb-4">
                        
-                        <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#feature-s">
+                        <button type="button" class="btn btn-dark shadow-none btn-sm" data-bs-toggle="modal" data-bs-target="#add-rooms">
                             <i class="bi bi-plus-square"></i>
                         </button>
                     </div>
                     
-                    <div class="table-responsive-md" style = "height : 350px; overflow-y : scroll;">
+                    <div class="table-responsive-lg" style = "height : 450px; overflow-y : scroll;">
                         <table class="table table-hover border">
                             <thead class = "table-dark">
                             <tr>
-                                <th scope="col">id</th>
+                                <th scope="col">#</th>
                                 <th scope="col">Name</th>
-                                <th scope="col">Action</th>
+                                <th scope="col">Area</th>
+                                <th scope="col"></th>
+
                             </tr>
                             </thead>
                                 <tbody id = "features-data">
