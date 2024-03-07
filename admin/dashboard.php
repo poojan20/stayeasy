@@ -12,12 +12,12 @@
     <title>Admin panel-Dashboard</title>
     <?php require("inc/links.php"); ?>
     <style>
-        #dashboard-menu
-            {
-                position: fixed;
-                height : 100%;
-                z-index : 11;
-            }
+      #dashboard-menu
+      {
+          position: fixed;
+          height : 100%;
+          z-index : 11;
+      }
     
     ::-webkit-scrollbar {
         width: 10px;
