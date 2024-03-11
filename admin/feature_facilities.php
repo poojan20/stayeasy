@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="dashboard_logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin panel- User queries</title>
+    <title>Admin panel- Features & Facilities</title>
     <?php require("inc/links.php"); ?>
     <style>
         #dashboard-menu {

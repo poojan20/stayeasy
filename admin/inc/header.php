@@ -1,8 +1,4 @@
 
-<!-- <button type = "submit"class="btn btn-dark shadow-none">
-                        LOGIN
-                    </button> -->
-
 <div class="container-fluid bg-light text-dark p-3 d-flex align-items-center justify-content-between sticky-top">
     <h3 class= "mb-0 h-font"><b>StayEasy</b></h3>
     <a href="logout.php" class="btn btn-dark btn-sm shadow-none">Log out</a>
@@ -21,14 +17,14 @@
                     <li class="nav-item active">
                         <a class="nav-link text-black" href="dashboard.php">Dashboard</a>
                     </li> 
+                    <li class="nav-item active"> 
+                        <a class="nav-link text-black" href="rooms.php">Rooms</a>
+                    </li> 
                     <li class="nav-item active">
                         <a class="nav-link text-black" href="feature_facilities.php">Feature & Facilities</a>
                     </li> 
                     <li class="nav-item active">
                         <a class="nav-link text-black" href="user_queries.php">User Queries</a>
-                    </li> 
-                    <li class="nav-item active"> 
-                        <a class="nav-link text-black" href="rooms.php">Rooms</a>
                     </li> 
                     <li class="nav-item active"> 
                         <a class="nav-link text-black" href="carousel.php">carousel</a>

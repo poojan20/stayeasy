@@ -4,7 +4,7 @@
     <link rel="shortcut icon" href="s.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stay easy - Facilities</title>
+    <title>StayEasy - Facilities</title>
     
     <?php require('inc/links.php')?>
     <style>

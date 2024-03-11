@@ -29,8 +29,7 @@
     color: black;
     background-color: lightblue;
     border :  1px solid lightblue;
-    padding : 3px 6px;
-    transition: background-color 0.3s ease;
+    
 }
 .btn_book:hover{
     background-color: #0096FF;
@@ -49,4 +48,11 @@
     background-color: white;
     border-width : 5;
     
+}
+.custom-alert
+{
+    position: fixed;
+    top: 80px;
+    right: 25px;
+    z-index:1111;
 }

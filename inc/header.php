@@ -4,24 +4,37 @@
 
     
         $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no` = ?";
+        $settings_q = "SELECT * FROM `settings` WHERE `sr_no` = ?";
+
         $values = [1];
         $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
-    
+        $settings_r = mysqli_fetch_assoc(select($settings_q,$values,'i'));
+
 ?>
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
 
 <!--Navbar from bootstrap5-->
 <nav id = "nav-bar" class="navbar navbar-expand-lg navbar-light px-lg-3 py-lg-2 shadow-sm sticky-top bg-body-tertiary ">
     <div class="container-fluid">
-        <a class="navbar-brand me-3" href="index.php"><font size = 5><strong>StayEasy</strong></font></a>
+        <a class="navbar-brand me-3" href="index.php"><font size = 5><strong><?php  echo $settings_r['site_title'] ?></strong></font></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-            <a class="nav-link  me-2"  href="index.php">Home</a>
+            <a class="nav-link  me-2" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link me-2" href="rooms.php">Rooms</a>
@@ -86,7 +99,7 @@
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <form>
+            <form id="register-form"> 
                     <div class="modal-header">
                     <h1 class="modal-title fs-5 d-flex align-items-center">
                     <i class="bi bi-person-vcard me-2 fs-3"></i>User Registration
@@ -102,49 +115,49 @@
 
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Name</label>
-                        <input type="text" class="form-control shadow-none">
+                        <input type="text" name="name" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Email</label>
-                        <input type="email" class="form-control shadow-none">
+                        <input type="email" name="email" class="form-control shadow-none" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Contact Number</label>
-                        <input type="text" class="form-control shadow-none">
+                        <input type="text" name="phonenum" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Picture</label>
-                        <input type="file" class="form-control shadow-none">
+                        <input type="file" name="profile" accept=".jpeg" class="form-control shadow-none" required>
                         </div>
                         
                         <div class="col-md-12 mb-3">
                              <label for="exampleFormControlTextarea1" class="form-label">Address</label>
-                             <textarea class="form-control shadow-none"  rows="1"></textarea>
+                             <textarea name="address" class="form-control shadow-none"  rows="1" required></textarea>
                         </div>
                         
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Pincode</label>
-                        <input type="number" class="form-control shadow-none">
+                        <input type="number" name="pincode" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Date of birth</label>
-                        <input type="date" class="form-control shadow-none">
+                        <input type="date" name="dob" class="form-control shadow-none" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Password</label>
-                        <input type="passsword" class="form-control shadow-none">
+                        <input type="password" name="pass" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Confirm Password </label>
-                        <input type="password" class="form-control shadow-none">
+                        <input type="password" name="cpass" class="form-control shadow-none" required>
                         </div>
                         <!-- </div> -->
                     </div>
                 </div>
                 <div class="text-center my-1">
-                <button type = "submit"class="btn btn-dark shadow-none">
+                <button type = "submit" class="btn btn-dark shadow-none">
                         REGISTER
                     </button>
                 </div>
@@ -170,3 +183,5 @@
         </div>
     </div>
 </div>
+</body>
+</html>

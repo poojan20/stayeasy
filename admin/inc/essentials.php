@@ -5,7 +5,7 @@ define('SITE_URL','http://127.0.0.1/stayeasy/');
 define('ABOUT_IMG_PATH',SITE_URL.'image/about/');
 define('CAROUSEL_IMG_PATH',SITE_URL.'image/carousel/');
 define('FACILITIES_IMG_PATH',SITE_URL.'image/facilities/');
-//define('FEATURES_IMG_PATH',SITE_URL.'image/features/');
+define('ROOMS_IMG_PATH',SITE_URL.'image/rooms/');
 
 
 
@@ -14,7 +14,8 @@ define('UPLOAD_IMAGE_PATH',$_SERVER['DOCUMENT_ROOT'].'/stayeasy/image/');
 define('ABOUT_FOLDER','about/');
 define('CAROUSEL_FOLDER','carousel/');
 define('FACILITIES_FOLDER','facilities/');
-//define('FEATURES_FOLDER','features/');
+define('ROOMS_FOLDER','rooms/');
+define('USERS_FOLDER','users/');
 
 
 
@@ -87,7 +88,6 @@ function deleteImage($image,$folder)
     }
 }
 
-
 function uploadSVGImage($image,$folder)
 {
     $valid_mime = ['image/svg+xml'];
@@ -106,6 +106,35 @@ function uploadSVGImage($image,$folder)
         $ext = pathinfo($image['name'],PATHINFO_EXTENSION);
         $rname = 'IMG_'.random_int(11111,99999).".$ext";
         $img_path = UPLOAD_IMAGE_PATH.$folder.$rname;
+        if(move_uploaded_file($image['tmp_name'],$img_path))
+        {
+            return $rname;
+        }
+        else
+        {
+            return 'upd_failed';
+        }
+    }
+}
+
+
+function uploadUserImage($image)
+{
+    $valid_mime = ['image/jpeg','image/png', 'image/webp'];
+    $img_mime = $image['type'];
+
+    if(!in_array($img_mime,$valid_mime))
+    {
+        return 'inv_img'; //invalid image 
+    }
+    else
+    {
+        $ext = pathinfo($image['name'],PATHINFO_EXTENSION);
+        $rname = 'IMG_'.random_int(11111,99999).".jpeg";
+        $img_path = UPLOAD_IMAGE_PATH.USERS_FOLDER.$rname;
+
+       
+
         if(move_uploaded_file($image['tmp_name'],$img_path))
         {
             return $rname;
