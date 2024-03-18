@@ -1,0 +1,6 @@
+Recipient: pranavvadhel2905@gmail.com
+Subject: Verify Your Email
+Message: Please click the link below to verify your email address:\nhttp://example.com/verify.php?email=pranavvadhel2905%40gmail.com
+Recipient: pranavvadhel2905@gmail.com
+Subject: Verify Your Email
+Message: Please click the link below to verify your email address:\nhttp://example.com/verify.php?email=pranavvadhel2905%40gmail.com

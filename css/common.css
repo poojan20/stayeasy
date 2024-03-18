@@ -19,7 +19,7 @@
 .btn{
     color: black;
     background-color: #FFFFFF;
-    border :  2px solid black;
+     border :  2px solid black; 
 }
 .btn:hover{
     background-color: #111e2e;
@@ -36,19 +36,24 @@
     color: white;
     
 }
-.btn2{
-    color: white;
-    background-color: #0D1117;
-    border :  2px solid white;
-    padding : 5px 10px
+.blue_btn
+{
+    color: black;
+    background-color:lightblue;
+     border :  2px solid black;
+}
+
+/* .btn2{
+    color: black;
+    background-color: #FFFFFF;
+     border :  2px solid black; 
     
 }
 .btn2:hover{
-    color: black;
-    background-color: white;
-    border-width : 5;
+    background-color: #111e2e;
+    color: white;
     
-}
+} */
 .custom-alert
 {
     position: fixed;

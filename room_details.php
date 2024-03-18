@@ -204,9 +204,19 @@
                         </div>
                     area;
 
-                    echo <<<book
-                        <a href="#" class="btn  w-100  rounded-2 text-decoration-none mb-1">Book Now</a>
-                    book;
+
+                    if(!$settings_r['shutdown'])
+                    {
+                        $login = 0;
+                        if(isset($_SESSION['login']) && $_SESSION['login'] == true)
+                        {
+                            $login = 1;
+                        }
+                        echo <<<book
+                        <button onclick='checkLoginToBook($login,$room_data[id])' class="btn  w-100  rounded-2 text-decoration-none mb-1">Book Now</button>
+                        book;
+                    }
+                    
 
                 ?>
             </div>

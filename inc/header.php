@@ -1,28 +1,3 @@
-<?php 
-    require('admin/inc/db_config.php');
-    require('admin/inc/essentials.php');
-
-    
-        $contact_q = "SELECT * FROM `contact_details` WHERE `sr_no` = ?";
-        $settings_q = "SELECT * FROM `settings` WHERE `sr_no` = ?";
-
-        $values = [1];
-        $contact_r = mysqli_fetch_assoc(select($contact_q,$values,'i'));
-        $settings_r = mysqli_fetch_assoc(select($settings_q,$values,'i'));
-
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
 
 <!--Navbar from bootstrap5-->
 <nav id = "nav-bar" class="navbar navbar-expand-lg navbar-light px-lg-3 py-lg-2 shadow-sm sticky-top bg-body-tertiary ">
@@ -49,24 +24,48 @@
             <a class="nav-link" href="about.php">About</a>
             </li>
         </ul>
-        <div class="d-flex" >
-           
-            <!-- Button trigger modal / for notification -->
-            <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
-                Login
-            </button>
-            <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
-                Register
-            </button>
+        <div class="d-flex m-3" >
+        <?php 
+            if(isset($_SESSION['login']) && $_SESSION['login'] == true)
+            {
+                $path = USERS_IMG_PATH;
+               echo <<<data
+               <div class="btn-group">
+                   <button type="button" class="btn btn-outline-dark shadow-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                       <img src="$path$_SESSION[uPic]" style="width: 25px; height: 25px;" class="me-1">
+                       $_SESSION[uName]
+                   </button>
+                   <ul class="dropdown-menu dropdown-menu-lg-end">
+                       <li><a class="dropdown-item" href="profile.php">Profile</a></li>
+                       <li><a class="dropdown-item" href="bookings.php.php">Booking</a></li>
+                       <li><a class="dropdown-item" href="logout.php">logout</a></li>  
+                   </ul>
+               </div>
+               data;
+               
+            }
+            else
+            {
+                echo <<<data
+                <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+                <button type="button" class="btn btn-outline-dark shadow-none" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register
+                </button>
+
+                data;
+            }
+        ?>    
         </div>
         </div>
     </div>
 </nav>
-    <!-- Modal -->
-    <div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
+    <!--Login  Modal -->
+<div class="modal fade" id="loginModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form id="login-form">
                     <div class="modal-header">
                     <h1 class="modal-title fs-5 d-flex align-items-center">
                     <i class="bi bi-person-circle me-2 fs-3 "></i>User Login
@@ -75,27 +74,71 @@
                 </div>
                 <div class="modal-body">
                 <div class="mb-3">
-                    <label  class="form-label">Email address</label>
-                    <input type="email" class="form-control shadow-none">
+                    <label  class="form-label">Email / Mobile</label>
+                    <input type="text" name="email_mob" required class="form-control shadow-none">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
                     <label  class="form-label">Password</label>
-                    <input type="password" class="form-control shadow-none">
+                    <input type="password" name="pass" required class="form-control shadow-none">
                     <div id="emailHelp" class="form-text">Enter your password associated with given E-mail</div>
                 </div>
-                <div class = "d-flex align-items-center justify-content-between ">
+                <div class = "d-flex align-items-center justify-content-between "> 
                     <button type = "submit"class="btn btn-dark shadow-none">
                         LOGIN
                     </button>
-                    <a href="javascript: void(0)" class ="text-secondary text-decoration-none">Forget Password?</a>
+                    <span id="forgot-password-link" style="cursor: pointer;" class="text-secondary text-decoration-none shadow-none" data-bs-toggle="modal" data-bs-target="#forgotModal" data-bs-dismiss="modal">
+                        Forgot Password?
+                    </span>
+
+
+                    <!-- <a href="javascript: void(0)" class ="text-secondary text  -decoration-none" data-bs-target="#forgotModal" data-bs-target="#forgotModal">Forget Password?</a> -->
                     
                 </div>
                 </div>
-             </form>
+            </form>
         </div>
     </div>
 </div>
+
+<!-- forgot modal -->
+<div class="modal fade" id="forgotModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="forgot-form">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5 d-flex align-items-center">
+                    <i class="bi bi-person-circle me-2 fs-3 "></i>Forgot Password
+                    </h1>
+                </div>
+                <div class="modal-body">
+                <span class="badge rounded-pill text-bg-dark mb-3 text-wrap lh-base">
+                    Note : A link will be sent to your email to reset your password
+                </span>
+                <div class="mb-4">
+
+                    <label  class="form-label">Email</label>
+                    <input type="email" name="email_mob" required class="form-control shadow-none">
+                </div>
+                
+                <div class = "mb-2 text-end"> 
+                    <button type = "submit"class="btn btn-dark shadow-none">
+                        Send link
+                    </button>
+                    
+                    <span class="text-secondary text-decoration-none shadow-none" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                        Cancel
+                    </span>
+                    <!-- <a href="javascript: void(0)" class ="">Forget Password?</a> -->
+                    
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- register modal -->
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -114,17 +157,17 @@
                     <div class = "row">
 
                         <div class="col-md-6 mb-3">
-                        <label  class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control shadow-none" required>
+                            <label  class="form-label">Name</label>
+                            <input type="text" name="name" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                        <label  class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control shadow-none" required>
+                            <label  class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control shadow-none" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
-                        <label  class="form-label">Contact Number</label>
-                        <input type="text" name="phonenum" class="form-control shadow-none" required>
+                            <label  class="form-label">Contact Number</label>
+                            <input type="text" name="phonenum" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
                         <label  class="form-label">Picture</label>
@@ -137,12 +180,12 @@
                         </div>
                         
                         <div class="col-md-6 mb-3">
-                        <label  class="form-label">Pincode</label>
-                        <input type="number" name="pincode" class="form-control shadow-none" required>
+                            <label  class="form-label">Pincode</label>
+                            <input type="number" name="pincode" class="form-control shadow-none" required>
                         </div>
                         <div class="col-md-6 mb-3">
-                        <label  class="form-label">Date of birth</label>
-                        <input type="date" name="dob" class="form-control shadow-none" required>
+                            <label  class="form-label">Date of birth</label>
+                            <input type="date" name="dob" class="form-control shadow-none" required>
                         </div>
 
                         <div class="col-md-6 mb-3">
@@ -159,7 +202,7 @@
                 <div class="text-center my-1">
                 <button type = "submit" class="btn btn-dark shadow-none">
                         REGISTER
-                    </button>
+                </button>
                 </div>
                 <!-- <div class="mb-3">
                     <label  class="form-label">Email address</label>
@@ -183,5 +226,4 @@
         </div>
     </div>
 </div>
-</body>
-</html>
+
