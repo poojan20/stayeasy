@@ -37,7 +37,7 @@
     }
 </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <!-- Bootstrap Icons css link -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -142,7 +142,7 @@
     <div class="col-lg-5 col-md-12 px-4">
         <div class="card mb-4 border-0 shadow-sm rounded-3">
             <div class="card-body">
-                <form action="#" id="booking_form">
+                <form action="pay_now.php" id="booking_form">
                     <h6 class="mb-3">Booking Details</h6>
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -160,11 +160,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-3">
                                 <label  class="form-label">Check-in</label>
-                                <input type="date" onchange="check_availability()" name="checkin"  class="form-control shadow-none" required>
+                                <input type="date" onchange="check_availability()" value="<?php echo $checkin_default ?>" name="checkin"  class="form-control shadow-none" required>
                             </div>
                             <div class="col-md-6 mb-4">
                                 <label  class="form-label">Check-out</label>
-                                <input type="date" onchange="check_availability()" name="checkout"  class="form-control shadow-none" required>
+                                <input type="date" onchange="check_availability()" value="<?php echo $checkout_default ?>"  name="checkout"  class="form-control shadow-none" required>
                             </div>
                         </div>
                         <div class="col-12">

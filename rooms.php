@@ -88,9 +88,9 @@
                                 <button id="chk_avail_btn" onclick="chk_avail_clear()" class=" btn btn-sm text d-none">Reset</button>
                             </h5>
                              <label  class="form-label">Check-in</label>
-                             <input type="date" class="form-control shadow-none mb-3" value="<?php echo $checkin_default ?>" id="checkin" onchange="chk_avail_filter()">
+                             <input type="date" class="form-control shadow-none mb-3"  id="checkin" onchange="chk_avail_filter()">
                              <label  class="form-label">Check-out</label>
-                             <input type="date" class="form-control shadow-none" value="<?php echo $checkout_default ?>" id="checkout" onchange="chk_avail_filter()">
+                             <input type="date" class="form-control shadow-none"  id="checkout" onchange="chk_avail_filter()">
                     </div>
                        
                     <!-- Facilities -->
