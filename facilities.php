@@ -47,8 +47,8 @@
     <h1 class="text-center raleway-font text-white">Our Facilities</h1>
     <div class="h-line width-50 mt-2">
         <p class="text-center mt-2 text-white "><br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis provident iste id nesciunt temporibus quidem voluptas!
-        </p>
+        Our facilities boast state-of-the-art amenities designed to provide unparalleled comfort and convenience for guests, ensuring a memorable and enjoyable stay.
+     </p>
     </div>
 </div><br><br>
 

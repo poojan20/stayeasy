@@ -18,7 +18,7 @@
 
         //check user exist or not
 
-        $u_exist = select("SELECT * FROM `user_cred` WHERE `email`=? OR `phonenum`=? LIMIT 1",[$data['email'],$data['phonenum']],"ss");
+        $u_exist = select("SELECT * FROM user_cred WHERE email=? OR phonenum=? LIMIT 1",[$data['email'],$data['phonenum']],"ss");
 
         if(mysqli_num_rows($u_exist)!=0)
         {
@@ -46,12 +46,12 @@
 
         $enc_pass = password_hash($data['pass'],PASSWORD_BCRYPT);
         $v_code = bin2hex(random_bytes(16));
-        $query = "INSERT INTO `user_cred`(`name`, `email`, `address`, `phonenum`, `pincode`, `dob`, `profile`, `password`,`verification_code`, `is_verified`) VALUES (?,?,?,?,?,?,?,?,?,?)";
+        $query = "INSERT INTO user_cred(name, email, address, phonenum, pincode, dob, profile, password) VALUES (?,?,?,?,?,?,?,?)";
 
         $values = [$data['name'],$data['email'],$data['address'],$data['phonenum'],$data['pincode'],$data['dob'],
-                $img,$enc_pass,$data['verification_code'],$data['is_verified']];
-            
-        if(insert($query,$values,'sssssssssi'))
+        $img,$enc_pass];
+    
+        if(insert($query,$values,'ssssssss'))
         {
             echo 1;
         }
@@ -60,13 +60,15 @@
             echo 'ins_failed';
         }
 
-    }
+}
+
+    
 
     if(isset($_POST['login']))
     {
         $data = filteration($_POST);
 
-        $u_exist = select("SELECT * FROM `user_cred` WHERE `email`=? OR `phonenum`=? LIMIT 1",
+        $u_exist = select("SELECT * FROM user_cred WHERE email=? OR phonenum=? LIMIT 1",
         [$data['email_mob'],$data['email_mob']],"ss");
 
         if(mysqli_num_rows($u_exist) == 0)
