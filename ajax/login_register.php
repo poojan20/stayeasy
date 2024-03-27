@@ -18,7 +18,7 @@
 
         //check user exist or not
 
-        $u_exist = select("SELECT * FROM `user_cred` WHERE `email`=? OR `phonenum`=? LIMIT 1",[$data['email'],$data['phonenum']],"ss");
+        $u_exist = select("SELECT * FROM user_cred WHERE email=? OR phonenum=? LIMIT 1",[$data['email'],$data['phonenum']],"ss");
 
         if(mysqli_num_rows($u_exist)!=0)
         {
@@ -68,7 +68,7 @@
     {
         $data = filteration($_POST);
 
-        $u_exist = select("SELECT * FROM `user_cred` WHERE `email`=? OR `phonenum`=? LIMIT 1",
+        $u_exist = select("SELECT * FROM user_cred WHERE email=? OR phonenum=? LIMIT 1",
         [$data['email_mob'],$data['email_mob']],"ss");
 
         if(mysqli_num_rows($u_exist) == 0)

@@ -289,7 +289,7 @@ if(isset($_POST['get_room_images']))
         {
             $thumb_btn = "<button onclick='thumb_image($row[sr_no],$row[room_id])' class = 'btn btn-secondary btn-sm shadow-none'>
                             <i class = 'bi bi-check-lg'></i>
-                        </button>;";
+                        </button>";
         }
         echo <<<data
             <tr class = 'align-middle'>
@@ -298,7 +298,7 @@ if(isset($_POST['get_room_images']))
                 <td>
                     <button onclick='rem_image($row[sr_no],$row[room_id])' class = 'btn btn-danger btn-sm shadow-none'>
                         <i class = 'bi bi-trash'></i>
-                    </button>;
+                    </button>
                 </td>
             </tr>
         data;

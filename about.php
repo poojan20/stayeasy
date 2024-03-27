@@ -45,26 +45,23 @@
     <div class="my-5 px-4">
         <h1 class="h-font text-center"><font face ="Raleway" color ="white" >About Us</font></h1>
         <div class="h-line width-50 mt-2">
-            <p class = "text-center mt-2"><br>
+            <!-- <p class = "text-center mt-2"><br>
                 <font color = "white">Lorem ipsum dolor</font><br>
-            </p>
+            </p> -->
         </div>
     </div><br>
     <div class="container">
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-md-5 mb-4 order-lg-1 order-md-1 order-2">  <!-- order 1 and 2 stands for the order in which they will appear in small devices-->
-                <h3 class="mb-3"><font color="white">clorem ipsum dolor sit.</font></h3>
+                <h3 class="mb-3"><font color="white">About our Founder</font></h3>
                 <p>
-                    <font color="white">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Neque perspiciatis atque id ad, quis corporis molestiae.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Neque perspiciatis atque id ad, quis corporis molestiae.
+                    <font color="white"  size=4>
+                     A visionary leader with a passion for innovation and a relentless drive for excellence. With a keen understanding of market dynamics and a strategic mindset, they have steered our organization towards success, inspiring teams to reach new heights of achievement. Their unwavering commitment to our mission and values serves as a guiding light, empowering us to make a meaningful impact in the world.
                     </font>
                 </p>
             </div>
             <div class="col-lg-5 col-md-5 mb-4 order-lg-2 order-1 order-md-2">
-                    <img src="\img\stayeasy\stayeasy\image\about\img_manager.jpg" alt="" class="w-100">
+                    <img src="\stayeasy\image\about\img_manager.jpg" alt="" class="w-100">
             </div>
         </div>
     </div>
@@ -72,26 +69,26 @@
         <div class="row">
             <div class= "col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="\img\stayeasy\stayeasy\image\about\img_hotel.png" alt="" width="70px">
+                    <img src="\stayeasy\image\about\img_hotel.png" alt="" width="70px">
                     <h4 class = "mt-4">100+ Rooms</h4>
                 </div>
             </div>
             <div class= "col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="\img\stayeasy\stayeasy\image\about\img_customer.png" alt="" width="70px">
+                    <img src="\stayeasy\image\about\img_customer.png" alt="" width="70px">
                     <h4 class = "mt-4">200+ Customers</h4>
                 </div>
             </div>
             <div class= "col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="\img\stayeasy\stayeasy\image\about\img_rating.png" alt="" width="70px">
+                    <img src="\stayeasy\image\about\img_rating.png" alt="" width="70px">
                     
                    <h4 class = "mt-4">1000+ Reviews</h4>
                 </div>
             </div>
             <div class= "col-lg-3 col-md-6 mb-4 px-4">
                 <div class="bg-white rounded p-4 border-top border-4 text-center shadow box">
-                    <img src="\img\stayeasy\stayeasy\image\about\img_staff.png" alt="" width="70px">
+                    <img src="\stayeasy\image\about\img_staff.png" alt="" width="70px">
                     
                    <h4 class = "mt-4">300+ Staff</h4>
                 </div>
