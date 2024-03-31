@@ -28,7 +28,7 @@
         }
         
         body{
-        background-image: url("/img/stayeasy/stayeasy/admin/login_background.jpg");
+        background-image: url("/stayeasy/admin/wallpaperflare.com_wallpaper (17).jpg");
         
         
         }

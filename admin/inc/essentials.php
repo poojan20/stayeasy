@@ -57,7 +57,7 @@ function uploadImage($image,$folder)
     {
         return 'inv_img'; //invalid image 
     }
-    else if(($image['size']/(1024*1024))>2)
+    else if(($image['size']/(1024*1024))>4)
     {
         return 'inv_size';
     }

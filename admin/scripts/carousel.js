@@ -32,7 +32,7 @@
             }
             else if(this.responseText == 'inv_size')
             {
-                alert('error','Image should be less than 2mb');
+                alert('error','Image should be less than 4mb');
             }
             else if(this.responseText == 'upd_failed')
             {

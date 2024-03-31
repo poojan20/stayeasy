@@ -240,8 +240,29 @@
                     $book_btn="<button onclick='checkLoginToBook($login,$room_data[id])' class='btn_book btn_book-sm custom-bg rounded-2 text-decoration-none'>Book Now</button>";
                 }
 
-                //print room card
+                $rating_q = "SELECT AVG(rating) AS `avg_rating` FROM `rating_review`
+                             WHERE `room_id`='$room_data[id]' ORDER BY `sr_no` DESC LIMIT 20";  
 
+                $rating_res = mysqli_query($con,$rating_q);
+
+                $rating_data = "";
+                $rating_fetch = mysqli_fetch_assoc($rating_res);
+
+                if($rating_fetch['avg_rating']!=NULL)
+                {
+                    $rating_data=" <div class ='rating mb-4'>
+                                    <h6 class ='mb-1'>Rating</h6>
+                                    <span class = 'badge rounded-pill'>";
+
+                    for($i = 0; $i<$rating_fetch['avg_rating']; $i++)
+                    {
+                        $rating_data .= "<i class='bi bi-star-fill text-warning'></i>"; 
+                    }
+                    $rating_data .= "</span>
+                    </div>";
+                }
+
+                //print room card
                 echo <<<data
 
                 <div class ="col-lg-4 col-md-6 my-3">
@@ -270,17 +291,7 @@
                                     </span>
                                     
                                 </div>
-                                <div class ="rating mb-4">
-                                    <h6 class ="mb-1">Rating</h6>
-                                    <span class = "badge rounded-pill">
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    <i class="bi bi-star-fill text-warning"></i>
-                                    </span>
-                                    
-                                </div>
+                                $rating_data
                                 <div class ="d-flex justify-content-evenly">
                                 $book_btn
                                 <a href="room_details.php?id=$room_data[id]" class="btn btn-sm custom-bg rounded-2 text-decoration-none">More Details</a>
@@ -331,54 +342,48 @@
     <!-- Testimonials -->
     <h2 class="mt-5 pt-5 mb-4 text-center"><font face = "Raleway" color = "white" size = 50>Reviews</font></h2>
     <div class="container">
-        <!-- Swiper -->
+        <!-- Swiper --> 
         <div class="swiper swiper-testimonials">
             <div class="swiper-wrapper mb-5">
-                <div class="swiper-slide bg-white p-4">
-                    <div class="profile d-flex align-items-center mb-3">
-                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                        <h6 class="m-0 ms-2">Random user 1</h6>
-                    </div>
-                    <p>Poojan pranav</p>
-                    <div class="rating">
-                        <h6 class="mb-1">Rating</h6>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide bg-white p-4">
-                    <div class="profile d-flex align-items-center mb-3">
-                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                        <h6 class="m-0 ms-2">Random user 2</h6>
-                    </div>
-                    <p>Poojan pranav</p>
-                    <div class="rating">
-                        <h6 class="mb-1">Rating</h6>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                    </div>
-                </div>
-                <div class="swiper-slide bg-white p-4">
-                    <div class="profile d-flex align-items-center mb-3">
-                        <img src="/img/Stayeasy/stayeasy/image/features/wifi.svg" width="30px">
-                        <h6 class="m-0 ms-2">Random user 3</h6>
-                    </div>
-                    <p>Poojan pranav</p>
-                    <div class="rating">
-                        <h6 class="mb-1">Rating</h6>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                    </div>
-                </div>
+                <?php
+                   $review_q = "SELECT rr.*,uc.name AS uname,uc.profile, r.name AS rname FROM `rating_review` rr
+                                INNER JOIN `user_cred` uc ON rr.user_id = uc.id
+                                INNER JOIN `rooms` r ON rr.room_id = r.id
+                                ORDER BY sr_no DESC LIMIT 6";
+
+                   $review_res = mysqli_query($con,$review_q);
+                   $img_path = USERS_IMG_PATH;
+
+                    if(mysqli_num_rows($review_res)==0)
+                    {
+                        echo 'No Review yet!';
+                    }
+                    else
+                    {
+                        while($row = mysqli_fetch_assoc($review_res))
+                        {
+                            $stars = "<i class='bi bi-star-fill text-warning'></i>";
+                            for($i=1; $i<$row['rating']; $i++)
+                            {
+                                $stars .=" <i class='bi bi-star-fill text-warning'></i> ";
+                            }
+                            echo<<<slides
+                            <div class="swiper-slide bg-white p-4">
+                                <div class="profile d-flex align-items-center mb-3">
+                                    <img src="$img_path$row[profile]" class="rounded-circle" loading="lazy" width="30px"
+                                    <h6 class="m-0 ms-2"> &nbsp;$row[uname]</h6>
+                                </div>
+                                <p>$row[review]</p>
+                                <div class="rating">
+                                    $stars
+                                </div>
+                            </div>
+                            slides;
+                        }
+                    }
+
+                ?>
+                
             </div>
             <div class="swiper-pagination"></div>
         </div>

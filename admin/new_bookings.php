@@ -57,11 +57,11 @@
             <div class="card border-0 shadow-sm mb-4">
                 <div class="card-body">
                     <div class="text-end mb-4">
-                       <input type="text" oninput="search_user(this.value)" class="form-control shadow-none w-25 ms-auto" placeholder="Type to search...">
+                       <input type="text" oninput="get_bookings(this.value)" class="form-control shadow-none w-25 ms-auto" placeholder="Type to search...">
                     </div>
                     
                     <div class="table-responsive">
-                        <table class="table table-hover border">
+                        <table class="table table-hover border" style="min-width:1200px;">
                             <thead class="table-dark">
                                 <tr>
                                     <th scope="col">#</th>
@@ -74,12 +74,12 @@
                             <tbody id="table-data"></tbody>
                         </table>
                     </div>
+                    
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 
 
@@ -109,6 +109,7 @@
         </form>
     </div>
 </div>
+
 
 <?php require("inc/scripts.php"); ?>
 <script src="scripts/new_bookings.js"></script>

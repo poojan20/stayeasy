@@ -45,9 +45,10 @@
             
             
             //run query to check room is availbale or not
-            $tb_query = "SELECT COUNT(*) AS `total_booking` FROM `booking_order`
+            
+            $tb_query = "SELECT COUNT(*) AS `total_bookings` FROM `booking_order`
             WHERE booking_status=? AND room_id=?
-            AND check_out>? AND check_in<?";
+            AND check_out > ? AND check_in < ?";
 
             $values = ['booked',$_SESSION['room']['id'],$frm_data['check_in'],$frm_data['check_out']];
 
@@ -57,7 +58,7 @@
             
             $rq_fetch=mysqli_fetch_assoc($rq_result);
 
-            if(($rq_fetch['quantity'] - $tb_fetch['total_booking'])==0)
+            if(($rq_fetch['quantity'] - $tb_fetch['total_bookings'])==0)
             {
                 $status = 'unavailable';
                 $result = json_encode(['status'=>$status]);

@@ -26,6 +26,12 @@
                         <ul class="nav nav-pills flex-column rounded border-secondary">
                             <li class="nav-item">
                                 <a class="nav-link text-black" href="new_bookings.php">New Bookings</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="refund_bookings.php">Refunds</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" href="booking_records.php">Booking Records</a>
                             </li>                           
                         </ul>
                         </div>
@@ -36,6 +42,9 @@
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link text-black" href="user_queries.php">User Queries</a>
+                    </li> 
+                    <li class="nav-item active">
+                        <a class="nav-link text-black" href="rate_review.php">Ratings & Reviews</a>
                     </li> 
                     <li class="nav-item active"> 
                         <a class="nav-link text-black" href="rooms.php">Rooms</a>

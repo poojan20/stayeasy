@@ -37,7 +37,7 @@
                    </button>
                    <ul class="dropdown-menu dropdown-menu-lg-end">
                        <li><a class="dropdown-item" href="profile.php">Profile</a></li>
-                       <li><a class="dropdown-item" href="bookings.php.php">Booking</a></li>
+                       <li><a class="dropdown-item" href="bookings.php">Booking</a></li>
                        <li><a class="dropdown-item" href="logout.php">logout</a></li>  
                    </ul>
                </div>
@@ -105,38 +105,29 @@
 <div class="modal fade" id="forgotModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form id="forgot-form">
-                    <div class="modal-header">
+            <form id="forgot-form" method="post" action="forgot_password.php">
+                <div class="modal-header">
                     <h1 class="modal-title fs-5 d-flex align-items-center">
-                    <i class="bi bi-person-circle me-2 fs-3 "></i>Forgot Password
+                        <i class="bi bi-person-circle me-2 fs-3 "></i>Forgot Password
                     </h1>
                 </div>
                 <div class="modal-body">
-                <span class="badge rounded-pill text-bg-dark mb-3 text-wrap lh-base">
-                    Note : A link will be sent to your email to reset your password
-                </span>
-                <div class="mb-4">
-
-                    <label  class="form-label">Email</label>
-                    <input type="email" name="email_mob" required class="form-control shadow-none">
-                </div>
-                
-                <div class = "mb-2 text-end"> 
-                    <button type = "submit"class="btn btn-dark shadow-none">
-                        Send link
-                    </button>
-                    
-                    <span class="text-secondary text-decoration-none shadow-none" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
-                        Cancel
-                    </span>
-                    <!-- <a href="javascript: void(0)" class ="">Forget Password?</a> -->
-                    
-                </div>
+                    <div class="mb-4">
+                        <label class="form-label">Phone Number</label>
+                        <input type="text" name="phone" required class="form-control shadow-none">
+                    </div>
+                    <div class="mb-2 text-end">
+                        <button type="submit" class="btn btn-dark shadow-none">Submit</button>
+                        <span class="text-secondary text-decoration-none shadow-none" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+                            Cancel
+                        </span>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+
 
 <!-- register modal -->
 <div class="modal fade" id="registerModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">

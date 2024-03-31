@@ -1,16 +1,21 @@
-function get_bookings()
-{
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/new_bookings.php",true);
-    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+function get_bookings(search) {
+    if (search == undefined) {
+        search = '';
+    }
 
-    xhr.onload = function()
-    {
+    let xhr = new XMLHttpRequest();
+    xhr.open("POST", "ajax/new_bookings.php", true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    xhr.onload = function() {
         document.getElementById('table-data').innerHTML = this.responseText;
     }
-    xhr.send('get_bookings');
+
+    xhr.send('get_bookings&search=' + encodeURIComponent(search));
 }
-let assign_room_form = document.getElementById('assign-room');
+
+
+let assign_room_form = document.getElementById('assign_room_form');
 
 function assign_room(id)
 {
@@ -22,14 +27,14 @@ assign_room_form.addEventListener('submit',function(e)
     e.preventDefault();
 
     let data = new FormData();
-    data.append('room_no',facility_s_form.elements['room_no'].value);
-    data.append('booking_id',facility_s_form.elements['booking_id'].files[0]);
-    data.append('assign_room');
+    data.append('room_no',assign_room_form.elements['room_no'].value);
+    data.append('booking_id',assign_room_form.elements['booking_id'].value);
+    data.append('assign_room','');
 
     
 
     let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/new_booking.php",true);
+    xhr.open("POST","ajax/new_bookings.php",true);
 
     xhr.onload = function()
     {
@@ -37,49 +42,46 @@ assign_room_form.addEventListener('submit',function(e)
         var modal = bootstrap.Modal.getInstance(myModal);
         modal.hide();
 
+        if(this.responseText==1)
+        {
+            alert('success','Room Number Alloted!Booking Finalized');
+            assign_room_form.reset();
+            get_bookings();
+        }
+        else
+        {
+            alert('error','Server Down')
+        }
         
     }
     xhr.send(data);
 });
 
-function remove_user(user_id)
+function cancel_booking(id)
 {
-    if(confirm("Are you sure, you want to remove this user? "))
+    if(confirm("Are you sure, you want to cancel this booking? "))
     {
         let data = new FormData();
-        data.append('user_id',user_id);
-        data.append('remove_user','');
+        data.append('booking_id',id);
+        data.append('cancel_booking','');
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST","ajax/users.php",true);
+        xhr.open("POST","ajax/new_bookings.php",true);
 
         xhr.onload = function()
         {
             if(this.responseText == 1)
             {
-                alert('success','User Removed');
-                get_users();
+                alert('success','Booking Cancelled!');
+                get_bookings();
             }
             else
             {
-                alert('error','User removal failed');
+                alert('error','Server Down!');
             }
         }
         xhr.send(data);
     }
-}
-
-function search_user(username)
-{
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST","ajax/users.php",true);
-    xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-
-    xhr.onload = function()
-    {
-        document.getElementById('users-data').innerHTML = this.responseText;
-    }
-    xhr.send('search_user&name='+username);  
 }
 
 window.onload = function()

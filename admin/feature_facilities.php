@@ -158,7 +158,7 @@
         <form id="facility_s_form">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5">Add Facility member</h1>
+                    <h1 class="modal-title fs-5">Add Facility</h1>
                 </div>
                 <div class="modal-body">
                     <div class="col-md-6 mb-3">
