@@ -32,7 +32,7 @@
                echo <<<data
                <div class="btn-group">
                    <button type="button" class="btn btn-outline-dark shadow-none dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                       <img src="$path$_SESSION[uPic]" style="width: 25px; height: 25px;" class="me-1">
+                       <img src="$path$_SESSION[uPic]" style="width: 25px; height: 25px;" class="me-1 rounded-circle">
                        $_SESSION[uName]
                    </button>
                    <ul class="dropdown-menu dropdown-menu-lg-end">
@@ -58,7 +58,7 @@
             }
         ?>    
         </div>
-        </div>
+        
     </div>
 </nav>
     <!--Login  Modal -->

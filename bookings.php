@@ -182,7 +182,7 @@
                     <select class="form-select shadow-none" name="rating">
                         <option value="5">Excellent</option>    
                         <option value="4">Good</option>
-                        <option value="3">Thik Thik</option>
+                        <option value="3">Okay</option>
                         <option value="2">Poor</option>
                         <option value="1">Bad</option>  
                     </select>
