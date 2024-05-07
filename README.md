@@ -24,7 +24,7 @@ StayEasy revolutionizes the hospitality industry by providing a fully dynamic an
 
 ## Installation
 
-To install StayEasy, simply clone the repository and follow the installation instructions in the [documentation](#).
+To install StayEasy, simply clone the repository in XAMPP folder.
 
 ## Usage
 
@@ -32,7 +32,7 @@ StayEasy is easy to use and navigate. Simply log in as an administrator or guest
 
 ## Support
 
-For support or inquiries, please contact [info@stayeasy.com](mailto:info@stayeasy.com).
+For support or inquiries, please contact Mail: business.stayeasy@gmail.com.
 
 ## Acknowledgements
 
