@@ -24,7 +24,7 @@ StayEasy revolutionizes the hospitality industry by providing a fully dynamic an
 
 ## Installation
 
-To install StayEasy, simply clone the repository in XAMPP folder.
+To install StayEasy, simply clone the repository in XAMPP folder and inport database in mysql.
 
 ## Usage
 
